@@ -1,8 +1,0 @@
-
-definitions:
-  us:
-    <<: *standard
-    event_types: [conference]
-    stylesheet: us.scss
-    title: US style
-
