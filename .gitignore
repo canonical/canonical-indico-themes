@@ -19,4 +19,4 @@ webpack-build-config.json
 node_modules/
 *.lock
 url_map.json
-indico*
+indico-3*
