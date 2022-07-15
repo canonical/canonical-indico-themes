@@ -16,6 +16,16 @@
 from indico.core import signals
 from indico.core.plugins import IndicoPlugin, IndicoPluginBlueprint
 
+# this is the list where we will put all of our theme information.
+# this list should contain a series of tuples, each containing three pieces of information as strings:
+# `(name, css, title)`
+# `name` is the internal name used for the stylesheet which will be stored when the theme is selected in an event.
+# `css` is the location of the CSS file, relative to the plugin's `static` folder.
+# `title` is the title displayed to the user when selecting the theme.
+
+CANONICAL_THEMES = [("ubuntu_summit", "/css/ubuntu_summit.css", "Ubuntu Summit"),
+                    ]
+
 
 class CanonicalThemesPlugin(IndicoPlugin):
     """Canonical Themes
@@ -30,7 +40,5 @@ class CanonicalThemesPlugin(IndicoPlugin):
         return IndicoPluginBlueprint(self.name, __name__)
 
     def _get_conference_themes_canonical(self, sender, **kwargs):
-        conference_themes = ("ubuntu_summit", "/css/ubuntu_summit.css", "Ubuntu Summit")
-        return conference_themes
-
-
+        for v in CANONICAL_THEMES:
+            yield v
