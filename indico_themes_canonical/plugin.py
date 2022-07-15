@@ -14,7 +14,6 @@
 
 
 import os
-
 from indico.core import signals
 from indico.core.plugins import IndicoPlugin, IndicoPluginBlueprint
 
@@ -26,9 +25,9 @@ class CanonicalThemesPlugin(IndicoPlugin):
 
     def init(self):
         super().init()
+        self.get_conference_themes("ubuntu_summit", "/css/ubuntu_summit.css", "Ubuntu Summit")
 
     def get_blueprints(self):
         return IndicoPluginBlueprint(self.name, __name__)
 
-    def get_conference_themes(self, **kwargs):
-        return ('ubuntu_summit', '/css/ubuntu_summit.css', 'Ubuntu Summit')
+
