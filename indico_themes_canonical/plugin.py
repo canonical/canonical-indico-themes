@@ -26,10 +26,9 @@ class CanonicalThemesPlugin(IndicoPlugin):
 
     def init(self):
         super().init()
-        self.connect(signals.plugin.get_event_themes_files, self._get_themes_yaml)
 
     def get_blueprints(self):
         return IndicoPluginBlueprint(self.name, __name__)
 
-    def _get_themes_yaml(self, sender, **kwargs):
-        return os.path.join(self.root_path, 'themes-canonical.yaml')
+    def get_conference_themes(self, **kwargs):
+        return ('ubuntu_summit', '/css/ubuntu_summit.css', 'Ubuntu Summit')
