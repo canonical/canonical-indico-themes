@@ -13,7 +13,6 @@
 # limitations under the License.
 
 
-import os
 from indico.core import signals
 from indico.core.plugins import IndicoPlugin, IndicoPluginBlueprint
 
@@ -25,9 +24,13 @@ class CanonicalThemesPlugin(IndicoPlugin):
 
     def init(self):
         super().init()
-        self.get_conference_themes("ubuntu_summit", "/css/ubuntu_summit.css", "Ubuntu Summit")
+        self.connect(signals.plugin.get_conference_themes, self._get_conference_themes_canonical)
 
     def get_blueprints(self):
         return IndicoPluginBlueprint(self.name, __name__)
+
+    def _get_conference_themes_canonical(self, sender, **kwargs):
+        conference_themes = ("ubuntu_summit", "/css/ubuntu_summit.css", "Ubuntu Summit")
+        return conference_themes
 
 
