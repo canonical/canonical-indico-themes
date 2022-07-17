@@ -1,2 +1,4 @@
 .idea/
 indico-3*
+*.egg*
+*.pyc
