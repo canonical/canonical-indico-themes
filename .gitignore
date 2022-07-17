@@ -2,3 +2,4 @@
 indico-3*
 *.egg*
 *.pyc
+__pycache__/
