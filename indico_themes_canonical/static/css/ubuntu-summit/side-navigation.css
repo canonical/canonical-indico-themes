@@ -1,0 +1,65 @@
+/* ----------- Styles for the menu (side-navigation) ----------- */
+
+/*
+Wrapper around the menu
+*/
+.conf_leftMenu {
+  float: left;
+  width: 220px;
+  padding-left: 10px;
+}
+
+/*
+Styles for the menu box (to override the deafults)
+*/
+#outer {
+  border: none;
+  background: none;
+  margin-top: 12.432px;
+}
+
+/*
+Styles for all menu items
+*/
+#outer li a {
+  font-size: 1rem;
+  padding: 0.25rem 1rem 0.25rem 1.5rem;
+}
+
+/*
+The unselected menu items
+*/
+#outer li:not(.selected) a {
+  color: rgb(0 0 0 / 75%);
+}
+
+
+/*
+The menu item when doing mouseover
+*/
+#outer li:is(.selected) a:hover {
+  background: #E6E6E6;
+}
+
+#outer li:not(.selected) a:not(.no-link):hover {
+  background: #F2F2F2;
+  color: #111;
+}
+
+
+/*
+A selected menu item
+*/
+#outer li:is(.selected) a {
+  border-left: 3px solid #111;
+}
+
+.menuConfSelected {
+  border: none;
+}
+
+.menuConfTitle.selected>a,
+.menuConfMiddleCell.selected>a {
+  background: #E6E6E6;
+  color: #111;
+}

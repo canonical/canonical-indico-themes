@@ -23,7 +23,7 @@ from indico.core.plugins import IndicoPlugin, IndicoPluginBlueprint
 # `css` is the location of the CSS file, relative to the plugin's `static` folder.
 # `title` is the title displayed to the user when selecting the theme.
 
-CANONICAL_THEMES = [("ubuntu_summit", "/css/ubuntu-summit/index.css", "Ubuntu Summit")]
+CANONICAL_THEMES = [("ubuntu_summit", "/css/ubuntu_summit.css", "Ubuntu Summit")]
 
 
 class CanonicalThemesPlugin(IndicoPlugin):

@@ -1,0 +1,2 @@
+[indico.plugins]
+themes_canonical = indico_themes_canonical.plugin:CanonicalThemesPlugin

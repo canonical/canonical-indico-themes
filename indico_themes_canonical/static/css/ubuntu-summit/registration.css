@@ -1,0 +1,97 @@
+/* ----------- Style for registration page ----------- */
+
+/*
+Style for registration table
+*/
+.i-table-widget {
+  border: none;
+}
+
+.i-table-widget th {
+  background: none;
+}
+
+.i-table-widget tr>th {
+  font-size: 0.765625rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.i-button.highlight:not(.label):not(.borderless):not(.text-color) {
+  background: #fff;
+  border-color: rgba(0, 0, 0, .56);
+  color: #111;
+}
+
+.i-button.highlight:not(.label):not(.borderless):not(.text-color):hover {
+  background: #f2f2f2;
+  border-color: rgba(0, 0, 0, .56);
+  background-image: none;
+  color: #111;
+  text-decoration: none;
+}
+
+/* ----------- Style for registration form ----------- */
+
+/*
+Style contact-us
+*/
+.icon-phone {
+  padding-left: 20px;
+}
+
+.icon-phone:before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-left: -20px;
+}
+
+i.icon:before {
+  background: url('https://assets.ubuntu.com/v1/f22f6ded-get-in-touch_chat.svg') !important;
+}
+
+i.icon.icon-phone {
+  margin-right: 15px;
+}
+
+/*
+Information box
+*/
+.info-message-box {
+  position: relative;
+  background-position: 1rem 1.15rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  border-radius: 0 0.125rem 0.125rem 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: calc(0.5rem - 1px);
+  padding-left: 1rem;
+  padding-top: calc(0.5rem - 1px);
+  border: 1px solid #d9d9d9;
+  background-image: url('../../information-icon.svg') !important;
+  background-color: #fff;
+}
+
+.info-message-box::before {
+  height: auto;
+  width: 0.1875rem;
+  bottom: -1px;
+  top: -1px;
+  left: -1px;
+  z-index: 1;
+  background-color: #24598f;
+  content: '';
+  position: absolute;
+}
+
+.info-message-box .icon {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.info-message-box .icon::before {
+  content: '';
+}
