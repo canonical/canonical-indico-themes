@@ -6,7 +6,6 @@ Wrapper around the menu
 .conf_leftMenu {
   float: left;
   width: 220px;
-  padding-left: 10px;
 }
 
 /*
@@ -63,3 +62,23 @@ A selected menu item
   background: #E6E6E6;
   color: #111;
 }
+
+
+@media screen and (max-width: 980px) {
+  .conf_leftMenu {
+    width: 100%;
+    display: inline;
+  }
+
+  #outer > li.menuConfTitle {
+    display: inline-block;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  #outer li a {
+    display: inline;
+    line-height: 1rem;
+  }
+}
+

@@ -7,19 +7,17 @@ By default centered with a fix width.
 #confSectionsBox {
   width: 950px;
   margin: 0 auto;
-  padding: 64px 0;
-}
-
-/*
-Wrapper around the content
-*/
-.confBodyBox {
-  margin-left: 252px;
+  padding: 64px 20px;
 }
 
 /*
 The content container
 */
+.col2 {
+  width: 100%;
+  margin: 0;
+}
+
 .conferenceDetails .description {
   margin: 0;
 }
@@ -30,6 +28,7 @@ Date and time info
 .infoline .label {
   font-weight: 400;
 }
+
 /*
 Registration call-out box
 */
@@ -49,8 +48,14 @@ Registration call-out box
 
 .i-button.highlight:not(.label):not(.borderless):not(.text-color) {
   background: #0e8420;
+  border-color: #0e8420;
   color: #fff;
-  border: #0e8420;
+}
+
+.i-button.highlight:not(.label):not(.borderless):not(.text-color):hover {
+  background: #0c6d1a;
+  border-color: #0c6d1a;
+  color: #fff;
 }
 
 .i-button.next::after {
@@ -60,9 +65,18 @@ Registration call-out box
 /*
 Responsive
 */
-@media screen and (max-width: 920px) {
-  .confBodyBox {
-    width: 400px;
+
+@media screen and (max-width: 980px) {
+  #confSectionsBox {
+    width: 100%;
   }
+  
+  .confBodyBox {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+
 }
 

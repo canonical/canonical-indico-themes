@@ -34,7 +34,7 @@ Optional:
 THEMES = [
     ConferenceTheme(
         name="ubuntu_summit",
-        css_path="css/ubuntu_summit.css",
+        css_path="css/ubuntu-summit/index.css",
         title="Ubuntu Summit",
         js_path="js/ubuntu_summit.js"
     ),
