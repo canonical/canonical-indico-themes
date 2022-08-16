@@ -14,43 +14,43 @@
  * limitations under the License.
 */
 
-/*
-Font delcaration
-*/
-@import 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@100';
+/* Font delcaration */
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@100";
 
-/*
-CSS declarations
-*/
-@import 'registration.css';
-@import 'header.css';
-@import 'side-navigation.css';
-@import 'overview.css';
+/* Imports */
+@import "_buttons.css";
+@import "_forms.css";
+@import "_icons.css";
+@import "contribution-list.css";
+@import "header.css";
+@import "overview.css";
+@import "registration.css";
+@import "scientific-program.css";
+@import "side-navigation.css";
+@import "surveys.css";
+@import "call-for-proposals.css";
 
 /* 
 TEMP STYLES
 */
 .confSubTitleBox,
-.support_box {
+.support_box,
+#session-bar {
   display: none;
 }
 
-/*
-Base styling
-*/
+/* Base styling */
 body,
 html {
-  font-size: 16px;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: 300;
-  -webkit-font-smoothing: antialiased;
   line-height: 1.5rem;
   overflow: none;
 }
 
-/*
-Manual override for stubborn styles
-*/
+/* Manual override for base styles */
 h1,
 h2,
 h3,
@@ -59,10 +59,13 @@ h5,
 h6,
 p,
 div,
+legend,
 li,
-input {
-  font-family: Ubuntu, sans-serif !important;
+input,
+.text > .title-with-actions > h2,
+.text > .subtitle-container > h3 {
   color: #111 !important;
+  font-family: Ubuntu, sans-serif !important;
 }
 
 a {
@@ -70,8 +73,8 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
   color: #06c;
+  text-decoration: underline;
 }
 
 p {
@@ -95,25 +98,26 @@ h5 {
 }
 
 h4 {
-  font-size: 1.222rem;
-  margin: 0 0 0.7rem;
-  padding: 0.301rem 0 0;
+  font-size: 1.306122449rem;
+  line-height: 2rem;
+  margin-bottom: 0.95rem;
+  padding-top: 0.051rem;
 }
 
 h3 {
-  font-size: 1.493rem;
+  font-size: 1.7059558517rem;
   font-weight: 100;
-  line-height: 2rem;
-  margin: 0 0 0.5rem;
-  padding: 0.5rem 0 0;
+  line-height: 2.5rem;
+  margin-bottom: 0.9rem;
+  padding-top: 0.101rem;
 }
 
 h2 {
-  font-size: 1.833rem;
   font-weight: 100;
-  line-height: 2.5rem;
-  margin: 0 0 0.9rem;
-  padding: 0.101rem 0 0;
+  font-size: 2.2281872349rem;
+  line-height: 3rem;
+  margin-bottom: 0.8rem;
+  padding-top: 0.201rem;
 }
 
 h1 {
@@ -132,24 +136,33 @@ td {
   color: #111;
 }
 
-/*
-The wrapper of the whole conference page.
-*/
+/* The wrapper of the whole conference page. */
 .conf {
-  width: 100%;
   border: none;
   margin: auto;
+  width: 100%;
 }
 
-/*
-Styles for tooltip
-*/
+/* Wrapper for content and side-navigation */
+#confSectionsBox {
+  margin: 0 auto;
+  padding: 64px 20px;
+  position: relative;
+  width: 1242px;
+}
+
+/* Content wrapper that has a left margin to emcompass the side-navigation */
+.confBodyBox {
+  margin-left: 250px;
+}
+
+/* Styles for tooltip */
 .qtip-default {
   background: #111;
   border: 1px solid #111;
   box-shadow: none;
-  padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .qtip {

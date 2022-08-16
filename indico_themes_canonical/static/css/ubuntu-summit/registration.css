@@ -1,8 +1,6 @@
-/* ----------- Style for registration page ----------- */
+/* ---------- Style for registration menu ---------- */
 
-/*
-Style for registration table
-*/
+/* Style for registration menu table */
 .i-table-widget {
   border: none;
 }
@@ -11,87 +9,172 @@ Style for registration table
   background: none;
 }
 
-.i-table-widget tr>th {
+.i-table-widget tr > th {
   font-size: 0.765625rem;
   font-weight: 400;
   line-height: 1rem;
   text-transform: uppercase;
 }
 
-.i-button.highlight:not(.label):not(.borderless):not(.text-color) {
-  background: #fff;
-  border-color: rgba(0, 0, 0, .56);
+/* ---------- Style for registration form ---------- */
+
+/* Remove/overide default styles */
+.info-message-box {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.info-message-box .icon,
+.action-box .icon,
+.action-box.accept .toolbar {
+  display: none;
+}
+
+.page-content > .action-box.accept > .section > .text .label {
+  color: #111;
+  font-weight: 300;
+}
+
+#registration-summary .i-box-header .i-box-metadata span {
   color: #111;
 }
 
-.i-button.highlight:not(.label):not(.borderless):not(.text-color):hover {
-  background: #f2f2f2;
-  border-color: rgba(0, 0, 0, .56);
-  background-image: none;
-  color: #111;
-  text-decoration: none;
+#registration-summary .i-box-header .i-box-metadata .label {
+  font-weight: 400;
 }
 
-/* ----------- Style for registration form ----------- */
-
-/*
-Style contact-us
-*/
-.icon-phone {
+/* Style contact-us info icon */
+i.icon.icon-phone {
+  margin-right: 15px;
   padding-left: 20px;
 }
 
 .icon-phone:before {
-  content: '';
-  position: absolute;
-  width: 35px;
+  content: "";
   height: 35px;
   margin-left: -20px;
+  position: absolute;
+  width: 35px;
 }
 
 i.icon:before {
-  background: url('https://assets.ubuntu.com/v1/f22f6ded-get-in-touch_chat.svg') !important;
+  background: url("https://assets.ubuntu.com/v1/f22f6ded-get-in-touch_chat.svg") !important;
 }
 
-i.icon.icon-phone {
-  margin-right: 15px;
+.infogrid.condensed .infoline {
+  width: 100%;
 }
 
-/*
-Information box
-*/
-.info-message-box {
-  position: relative;
+/* Styling for the information boxes */
+.ui.positive.message,
+.action-box.accept {
+  background-color: #fff;
+  background-image: url("../../information-icon.svg") !important;
   background-position: 1rem 1.15rem;
   background-repeat: no-repeat;
   background-size: 1rem;
-  border-radius: 0 0.125rem 0.125rem 0;
-  margin-bottom: 1.5rem;
-  padding-bottom: calc(0.5rem - 1px);
-  padding-left: 1rem;
-  padding-top: calc(0.5rem - 1px);
   border: 1px solid #d9d9d9;
-  background-image: url('../../information-icon.svg') !important;
+  border-radius: 0 0.125rem 0.125rem 0;
+  box-shadow: none;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+
+.ui.positive.message::before,
+.action-box.accept::before {
+  background-color: #24598f;
+  bottom: -1px;
+  content: "";
+  height: auto;
+  left: -1px;
+  position: absolute;
+  top: -1px;
+  width: 0.1875rem;
+  z-index: 1;
+}
+
+/* Styles for the form */
+.regform-section {
+  box-shadow: none;
+}
+
+.regform-section .i-box-header {
+  background: #fff;
+}
+
+.regform-section .i-box-header .i-box-title {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.ui.form .field > label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: .75rem;
+}
+
+.ui.form input {
+  font-weight: 300;
+}
+
+.ui.form .field .field {
+  margin-bottom: 1rem;
+}
+
+/* ---------- Style for registration summary ---------- */
+
+.regform-done {
+  border: none;
+  box-shadow: none;
+}
+
+.regform-done .i-box-header {
   background-color: #fff;
 }
 
-.info-message-box::before {
-  height: auto;
-  width: 0.1875rem;
-  bottom: -1px;
-  top: -1px;
-  left: -1px;
-  z-index: 1;
-  background-color: #24598f;
-  content: '';
-  position: absolute;
+.regform-done .i-box-header .i-box-title {
+  font-size: 1.3em;
+  font-weight: 300;
 }
 
-.info-message-box .icon {
-  margin-right: 16px;
-  margin-left: 16px;
+.regform-done .regform-done-caption,
+.regform-done .regform-done-data {
+  border: none;
+  color: #111;
+  font-weight: 300;
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  text-align: left;
 }
 
-.info-message-box .icon::before {
-  content: '';
+.regform-done table.registration-info tr.regform-done-title td {
+  font-size: 0.77rem;
+  font-weight: 400;
+  line-height: 1rem;
+  padding: 0.75rem 0.5rem 0.75rem 0;
+  text-transform: uppercase;
+}
+
+.regform-done table.registration-info tr.regform-done-title td {
+  padding-top: 1.5rem;
+}
+
+.regform-done tr {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* ---------- Media queries ---------- */
+
+@media screen and (max-width: 550px) {
+  #registration-summary .i-box-header .i-box-metadata .label {
+    clear: left;
+    float: left;
+    margin: 0;
+  }
+
+  #registration-summary .i-box-header .i-box-metadata .content {
+    float: left;
+    margin-left: 1rem;
+  }
 }

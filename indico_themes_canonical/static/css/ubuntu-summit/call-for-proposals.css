@@ -1,0 +1,34 @@
+/* ---------- Style for Call to Abstracts/Propoasals page ---------- */
+
+/* Style for deadline progress bar */
+ul.steps li.completed .circle::before {
+  background-color: #24598f;
+  border-color: #245987;
+}
+
+ul.steps li.completed .horizontal-line {
+  background-color: #24598f;
+}
+
+ul.steps .circle::before {
+  border-color: #AEA79F;
+}
+
+ul.steps .horizontal-line {
+  background-color: #AEA79F;
+}
+
+
+@media screen and (max-width: 550px) {
+  ul.steps li {
+    flex-basis: 100%;
+  }
+
+  ul.steps li:first-child {
+    margin-bottom: 1.5rem;
+  }
+
+  .call-for-abstracts .flexrow {
+    flex-flow: row wrap;
+  }
+}

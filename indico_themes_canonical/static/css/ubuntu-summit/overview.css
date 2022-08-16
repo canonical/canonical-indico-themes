@@ -1,82 +1,55 @@
-/* ----------- Styles for the main content ----------- */
+/* ---------- Styles for the main page content ---------- */
 
-/*
-The wrapper around the menu and the page content.
-By default centered with a fix width.
-*/
-#confSectionsBox {
-  width: 950px;
-  margin: 0 auto;
-  padding: 64px 20px;
-}
-
-/*
-The content container
-*/
+/* The content container */
 .col2 {
-  width: 100%;
   margin: 0;
+  width: 100%;
 }
 
 .conferenceDetails .description {
   margin: 0;
 }
 
-/*
-Date and time info
-*/
+/* Date and time info */
 .infoline .label {
   font-weight: 400;
 }
 
-/*
-Registration call-out box
-*/
+/* Registration call-out box */
 .action-box.highlight {
-  border: none;
   background: #fff;
-  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%), 0 0 3px 0 rgb(0 0 0 / 20%);
+  border: none;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
+    0 0 3px 0 rgb(0 0 0 / 20%);
 }
 
-.icon-ticket::before {
-  color: #E95420;
-}
+/* ---------- Media queries ---------- */
 
-.toolbar .i-button:not(.label) {
-  font-weight: 300;
-}
-
-.i-button.highlight:not(.label):not(.borderless):not(.text-color) {
-  background: #0e8420;
-  border-color: #0e8420;
-  color: #fff;
-}
-
-.i-button.highlight:not(.label):not(.borderless):not(.text-color):hover {
-  background: #0c6d1a;
-  border-color: #0c6d1a;
-  color: #fff;
-}
-
-.i-button.next::after {
-  content: '';
-}
-
-/*
-Responsive
-*/
-
-@media screen and (max-width: 980px) {
-  #confSectionsBox {
+@media screen and (max-width: 550px) {
+  .infoline.date,
+  .infoline.location,
+  .infoline.chairs,
+  .infoline.material {
     width: 100%;
   }
-  
-  .confBodyBox {
-    margin: 0;
+
+  .action-box.highlight .section {
+    flex-flow: row wrap;
+  }
+
+  .action-box.highlight .section .toolbar {
+    width: 100%;
+    padding: 0;
+    margin-top: 0.5rem;
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1250px) {
+  #confSectionsBox {
+    width: 100% !important;
+  }
 
+  .confBodyBox {
+    margin-left: 0 !important;
+  }
 }
-

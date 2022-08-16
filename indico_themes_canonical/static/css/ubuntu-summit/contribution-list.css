@@ -1,0 +1,56 @@
+/* -------- Styles for the contributions pages -------- */
+
+/* Style for tehe filter/search bar */
+#counter #filtering-state {
+  color: #111;
+  font-weight: 400;
+}
+
+.group .icon-search {
+  color: #111;
+}
+
+/* Style for indervidual contribution cards */
+#display-contribution-list a:hover {
+  text-decoration: none;
+}
+.contribution-list .contribution-row:hover {
+  border-color: #e95420;
+}
+
+.contribution-list .contribution-row .description::before:hover {
+  text-decoration: none;
+}
+
+/* Style for Constribution details page */
+.item-summary .generic-data {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.item-summary section .header-row h3 {
+  font-weight: 100;
+}
+
+/* --------- Style for My Constributions page -------- */
+
+/* Responsive */
+@media screen and (max-width: 550px) {
+  .toolbar.f-j-end {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .toolbar.f-j-end div:nth-child(-n + 2) {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+
+  .toolbar.f-j-end div.group {
+    margin: 0.5rem 0.5rem 0 0;
+  }
+
+  .toolbar.f-j-end .group ~ .group {
+    margin-left: 0;
+  }
+}

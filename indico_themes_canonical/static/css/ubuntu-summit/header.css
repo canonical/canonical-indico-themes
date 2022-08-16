@@ -5,29 +5,37 @@ Wraps around the upper part of the conference header.
 */
 .confheader {
   background-blend-mode: multiply, multiply, normal, normal, normal;
-  background-image: linear-gradient(to bottom right,
+  background-image: linear-gradient(
+      to bottom right,
       rgb(228 228 228 / 54%) 0%,
       rgb(228 228 228 / 54%) 49.9%,
       rgb(228 228 228 / 0%) 50%,
-      rgb(228 228 228 / 0%) 100%),
-    linear-gradient(to bottom left,
+      rgb(228 228 228 / 0%) 100%
+    ),
+    linear-gradient(
+      to bottom left,
       rgb(216 216 216 / 54%) 0%,
       rgb(216 216 216 / 54%) 49.9%,
       rgb(216 216 216 / 0%) 50%,
-      rgb(216 216 216 / 0%) 100%),
-    linear-gradient(to top right,
+      rgb(216 216 216 / 0%) 100%
+    ),
+    linear-gradient(
+      to top right,
       rgb(255 255 255 / 100%) 0%,
       rgb(255 255 255 / 100%) 49%,
       rgb(255 255 255 / 0%) 50%,
-      rgb(255 255 255 / 0%) 100%),
-    linear-gradient(to top right,
+      rgb(255 255 255 / 0%) 100%
+    ),
+    linear-gradient(
+      to top right,
       rgb(255 255 255 / 100%) 0%,
-      rgb(255 255 255 / 100%) 100%),
+      rgb(255 255 255 / 100%) 100%
+    ),
     linear-gradient(-89deg, #e47a54 0%, #bb4115 38%, #772507 85%);
-  background-position: 0% 0%, top right, right 0 bottom 4rem, right bottom, 0% 0%;
+  background-position: 0% 0%, top right, right 0 bottom 4rem, right bottom,
+    0% 0%;
   background-repeat: no-repeat;
-  background-size: 100% calc(100% - 4rem), 50% 100%, 100% 4rem, 100% 4rem,
-    auto;
+  background-size: 100% calc(100% - 4rem), 50% 100%, 100% 4rem, 100% 4rem, auto;
   margin-bottom: -4rem;
   overflow: hidden;
   padding-bottom: 12rem !important;
@@ -43,7 +51,7 @@ Wraps around the title box
 }
 
 .confTitle h1 {
-  margin-left: 252px;
+  width: auto;
 }
 
 /*
