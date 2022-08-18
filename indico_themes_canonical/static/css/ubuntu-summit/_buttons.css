@@ -35,7 +35,7 @@
 
 /* Style for standard buttons */
 
-.i-button.highlight,
+.i-button:not(.subtle).highlight,
 .i-button.highlight:not(.label):not(.borderless):not(.text-color),
 .ui.primary.button,
 .i-button.highlight.text-color.outline,
@@ -54,7 +54,7 @@
 .i-button.highlight:not(.label):not(.borderless):not(.text-color):hover,
 .ui.primary.button:hover,
 .i-button.highlight.text-color.outline:hover,
-.i-button:not(.subtle):hover,
+.i-button:not(.subtle):not(.subtle):hover,
 .i-button:not(.label):hover,
 .ui.modal .actions .ui.button:not(.highlighted):not(.primary):hover {
   background: var(--brand-white);

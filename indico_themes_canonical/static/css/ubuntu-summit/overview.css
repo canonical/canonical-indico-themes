@@ -139,6 +139,18 @@
   margin-top: 1rem;
 }
 
+/* Attach materials button */
+.i-button.text-color:not(.color-on-hover) {
+  color: #AEA79F;
+}
+
+.i-button.text-color:not(.color-on-hover):hover {
+  background: none;
+  border: none;
+  color: #333333;
+}
+
+
 /* ---------- Media queries ---------- */
 
 @media screen and (max-width: 550px) {
