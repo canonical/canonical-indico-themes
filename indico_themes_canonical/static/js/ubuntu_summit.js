@@ -1,3 +1,5 @@
+/* ---------- JS for collapsable side navigation ---------- */
+
 /**
   Toggles the expanded/collapsed classed on side navigation element.
 
@@ -39,7 +41,6 @@ const throttle = function (fn, delay) {
   @param {HTMLElement} sideNavigation The side navigation element.
 */
 function setupSideNavigation(sideNavigation, navigationToggle) {
-  const navigationTogleBtn = navigationToggle.querySelector(".navigationToggleBtn")
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       toggleDrawer(sideNavigation, false);
@@ -93,9 +94,9 @@ function setupSideNavigations(sideNavigationSelector) {
   setupSideNavigation(sideNavigation, navigationToggle);
 }
 
-/*
-  Adds meta tag to support media queries
-*/
+
+
+/* ---------- Adds meta tag to support media queries ---------- */
 function addMetaTag() {
   const meta = document.createElement("meta");
   meta.name = "viewport";
@@ -103,6 +104,7 @@ function addMetaTag() {
   document.getElementsByTagName('head')[0].appendChild(meta);
 }
 
+/* --------- Setup on window load ---------- */
 window.addEventListener("load", function() {
   addMetaTag();
   setupSideNavigations(".conf_leftMenu");

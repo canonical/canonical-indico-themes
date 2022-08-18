@@ -23,8 +23,21 @@
   margin-top: 2rem;
 }
 
-/* Style for the required asterix '*' */
-.i-form .form-group .form-label > .required {
-  color: #111;
-  line-height: 1rem;
+/* Fixes content spilling out the edge on smaller screens */
+#survey-questionnaire .form-group + fieldset {
+  min-width: 100%;
+}
+
+/* --------- Responsive --------- */
+@media screen and (max-width: 550px) {
+  .i-form .form-group-footer a,
+  .i-form .form-group-footer input {
+    margin: 0.25rem;
+  }
+
+  .i-form .form-group-footer .form-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }

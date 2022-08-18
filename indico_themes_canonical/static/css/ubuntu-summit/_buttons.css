@@ -32,7 +32,7 @@
 
 /* Style for standard buttons */
 
-.i-button,
+.i-button:not(.subtle),
 .i-button:not(.label) {
   background: #fff;
   border-color: rgba(0, 0, 0, 0.56);
@@ -43,7 +43,7 @@
   padding: calc(0.4rem - 1px) 1rem;
 }
 
-.i-button:hover,
+.i-button:not(.subtle):hover,
 .i-button:not(.label):hover {
   background: #fff;
   background-color: #f2f2f2;
