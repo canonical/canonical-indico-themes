@@ -1,15 +1,5 @@
 /* ---------- Styles for the main page content ---------- */
 
-/* The content container */
-.col2 {
-  margin: 0;
-  width: 100%;
-}
-
-.conferenceDetails .description {
-  margin: 0;
-}
-
 /* Date and time info */
 .infoline .label {
   font-weight: 400;
@@ -22,6 +12,18 @@
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
     0 0 3px 0 rgb(0 0 0 / 20%);
 }
+
+/* Attach materials button */
+.i-button.text-color:not(.color-on-hover) {
+  color: #AEA79F;
+}
+
+.i-button.text-color:not(.color-on-hover):hover {
+  background: none;
+  border: none;
+  color: #333333;
+}
+
 
 /* ---------- Media queries ---------- */
 

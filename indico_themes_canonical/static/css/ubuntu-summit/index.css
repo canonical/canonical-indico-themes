@@ -20,6 +20,7 @@
 /* Imports */
 @import "_buttons.css";
 @import "_forms.css";
+@import "_notifications.css";
 @import "_icons.css";
 @import "contribution-list.css";
 @import "header.css";
@@ -35,7 +36,8 @@ TEMP STYLES
 */
 .confSubTitleBox,
 .support_box,
-#session-bar {
+.event-page-header,
+div.footer {
   display: none;
 }
 
@@ -47,7 +49,7 @@ html {
   font-style: normal;
   font-weight: 300;
   line-height: 1.5rem;
-  overflow: none;
+  overflow-x: hidden;
 }
 
 /* Manual override for base styles */
@@ -136,6 +138,8 @@ td {
   color: #111;
 }
 
+/* ---------- Content wrapper used on every page ---------- */
+
 /* The wrapper of the whole conference page. */
 .conf {
   border: none;
@@ -156,23 +160,12 @@ td {
   margin-left: 250px;
 }
 
-/* Styles for tooltip */
-.qtip-default {
-  background: #111;
-  border: 1px solid #111;
-  box-shadow: none;
-  font-size: 0.875rem;
-  padding: 0.25rem 0.5rem;
+/* More content wrappers */
+.col2 {
+  margin: 0;
+  width: 100%;
 }
 
-.qtip {
-  min-width: 40px;
-}
-.qtip .qtip-tip {
-  color: #111;
-}
-
-.qtip-content {
-  color: #fff !important;
-  line-height: 0.5rem;
+.conferenceDetails .description {
+  margin: 0;
 }
