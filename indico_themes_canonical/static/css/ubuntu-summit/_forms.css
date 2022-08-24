@@ -44,6 +44,7 @@ input[type]:not([type=number]):not([type=checkbox]):not([type=radio]):not([type=
   height: 1rem;
   margin: 0;
   width: 1rem;
+  vertical-align: middle;
 }
 
 .i-checkbox input:focus {
@@ -52,7 +53,7 @@ input[type]:not([type=number]):not([type=checkbox]):not([type=radio]):not([type=
   transition: .1s;
 }
 
-.i-checkbox  .checkbox-label label {
+.i-checkbox .checkbox-label label {
   font-weight: 300;
 }
 
