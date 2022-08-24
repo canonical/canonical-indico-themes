@@ -15,7 +15,7 @@
 */
 
 /* Font delcaration */
-@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@100";
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;";
 
 /* Imports */
 @import "_buttons.css";
@@ -37,6 +37,11 @@ TEMP STYLES
 .support_box,
 #session-bar {
   display: none;
+}
+/* Custom properties */
+:root {
+  --full-width: 1242px;
+  --full-vertical-padding: 20px;
 }
 
 /* Base styling */
@@ -146,9 +151,9 @@ td {
 /* Wrapper for content and side-navigation */
 #confSectionsBox {
   margin: 0 auto;
-  padding: 64px 20px;
+  padding: 64px var(--full-vertical-padding);
   position: relative;
-  width: 1242px;
+  width: var(--full-width);
 }
 
 /* Content wrapper that has a left margin to emcompass the side-navigation */

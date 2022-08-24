@@ -38,7 +38,7 @@ Wraps around the upper part of the conference header.
   background-size: 100% calc(100% - 4rem), 50% 100%, 100% 4rem, 100% 4rem, auto;
   margin-bottom: -4rem;
   overflow: hidden;
-  padding-bottom: 12rem !important;
+  padding: 0 var(--full-vertical-padding) 12rem !important;
   position: relative;
 }
 

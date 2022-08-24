@@ -113,8 +113,11 @@
   }
 
   #confSectionsBox > .conf_leftMenu {
-    width: 100%;
-    position: static;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    width: auto;
+    top: 114px;
   }
 
   .navigationToggleCont {

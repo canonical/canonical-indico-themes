@@ -22,10 +22,10 @@ function toggleDrawer(sideNavigation, show) {
 }
 
 // throttle util (for window resize event)
-var throttle = function (fn, delay) {
-  var timer = null;
+const throttle = function (fn, delay) {
+  let timer = null;
   return function () {
-    var context = this,
+    const context = this,
       args = arguments;
     clearTimeout(timer);
     timer = setTimeout(function () {
@@ -40,7 +40,6 @@ var throttle = function (fn, delay) {
 */
 function setupSideNavigation(sideNavigation, navigationToggle) {
   const navigationTogleBtn = navigationToggle.querySelector(".navigationToggleBtn")
-  console.log(navigationTogleBtn)
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       toggleDrawer(sideNavigation, false);
