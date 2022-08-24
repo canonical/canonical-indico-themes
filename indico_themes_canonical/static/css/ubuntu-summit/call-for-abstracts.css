@@ -18,6 +18,15 @@ ul.steps .horizontal-line {
   background-color: #AEA79F;
 }
 
+/* Style for modal form */
+.ui-dialog-titlebar {
+  font-size: 1.306rem;
+  line-height: 2rem;
+  font-weight: 300;
+  background-color: #ffff !important;
+}
+
+/* ---------- Responsiveness ---------- */
 
 @media screen and (max-width: 550px) {
   ul.steps li {

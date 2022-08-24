@@ -58,7 +58,7 @@ i.icon.icon-phone {
   width: 35px;
 }
 
-i.icon:before {
+i.icon.icon-phone:before {
   background: url("https://assets.ubuntu.com/v1/f22f6ded-get-in-touch_chat.svg") !important;
 }
 
