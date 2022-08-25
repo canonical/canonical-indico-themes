@@ -141,7 +141,7 @@
 
 /* Attach materials button */
 .i-button.text-color:not(.color-on-hover) {
-  color: #AEA79F;
+  color: var(--brand-warm-grey);
 }
 
 .i-button.text-color:not(.color-on-hover):hover {

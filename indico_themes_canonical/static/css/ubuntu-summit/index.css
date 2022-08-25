@@ -72,6 +72,19 @@ TEMP STYLES
   --button-green_hover: #0c6d1a;
 }
 
+/* Custom properties */
+:root {
+  --full-width: 1242px;
+  --full-vertical-padding: 20px;
+  --brand-black: #111;
+  --brand-blue: #24598F;
+  --brand-white: #fff;
+  --brand-warm-grey: #AEA79F;
+  --brand-off-white: #f2f2f2;
+  --button-green: #0e8420;
+  --button-green_hover: #0c6d1a;
+}
+
 /* Base styling */
 body,
 html {
