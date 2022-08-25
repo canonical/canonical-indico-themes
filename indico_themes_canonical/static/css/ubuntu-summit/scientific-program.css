@@ -1,11 +1,11 @@
 /* --------- Style for the programme page -------- */
 ul.sub-tracks li .track-title h3 {
-  color: #111;
+  color: var(--brand-black);
   font-size: 1.22rem !important;
 }
 
 ul.sub-tracks li .track-title .track-code {
-  color: #111;
+  color: var(--brand-black);
   font-size: 1rem;
   font-weight: 300;
 }

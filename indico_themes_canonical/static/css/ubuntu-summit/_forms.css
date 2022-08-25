@@ -13,11 +13,12 @@
 /* Style for text input boxes */
 textarea,
 select,
-input[type]:not([type=checkbox]):not([type=radio]):not([type=checkbox]):not([type=submit]) {
+input[type]:not([type=checkbox]):not([type=radio]):not([type=checkbox]):not([type=submit]),
+.ui.form textarea {
   border: 1px solid rgba(0, 0, 0, .56);
   border-radius: 0;
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 12%);
-  color: #111;
+  color: var(--brand-black);
   font-weight: 300;
   min-width: 10em;
   padding: calc(0.4rem - 1px) 0.5rem;
@@ -40,11 +41,13 @@ input[type]:not([type=number]):not([type=checkbox]):not([type=radio]):not([type=
 }
 
 /* Style for checkboxes */
-.i-checkbox input {
+.i-checkbox input,
+.ui.checkbox label:before {
   height: 1rem;
   margin: 0;
   width: 1rem;
   vertical-align: middle;
+  border-color: var(--brand-black)111;
 }
 
 .i-checkbox input:focus {
@@ -53,6 +56,10 @@ input[type]:not([type=number]):not([type=checkbox]):not([type=radio]):not([type=
   transition: .1s;
 }
 
+.ui.checkbox label:hover:before,
+.ui.checkbox input:checked ~ label:before {
+  border-color: var(--brand-black)111;
+}
 .i-checkbox .checkbox-label label {
   font-weight: 300;
 }
@@ -75,24 +82,24 @@ input[type]:not([type=number]):not([type=checkbox]):not([type=radio]):not([type=
 }
 
 #survey-questionnaire .radio-item-0:not(.inline-vcentered) input:not([required]) + label {
-  color: #111;
+  color: var(--brand-black);
 }
 
 /* Style for the yes/no button styled radio inputs */
 .i-selection input[type='radio']:checked+label:not(.label):not(.borderless):not(.text-color) {
   background: #e6e6e6;
   border-color: rgba(0, 0, 0, 0.56);
-  color: #111;
+  color: var(--brand-black);
 }
 
 .i-selection input[type='radio']:checked+label:not(.label):not(.borderless):not(.text-color):hover {
   background: #F2F1F0;
   border-color: rgba(0, 0, 0, 0.56);
-  color: #111;
+  color: var(--brand-black);
 }
 /* Style for the required asterix '*' */
 .i-form .form-group .form-label>.required {
-  color: #111;
+  color: var(--brand-black);
   line-height: 1rem;
   right: 0.3rem;
 }
