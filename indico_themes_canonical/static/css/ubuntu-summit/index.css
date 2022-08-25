@@ -41,6 +41,19 @@ div.footer {
   display: none;
 }
 
+/* Custom properties */
+:root {
+  --full-width: 1242px;
+  --full-vertical-padding: 20px;
+  --brand-black: #111;
+  --brand-blue: #24598F;
+  --brand-white: #fff;
+  --brand-warm-grey: #AEA79F;
+  --brand-off-white: #f2f2f2;
+  --button-green: #0e8420;
+  --button-green_hover: #0c6d1a;
+}
+
 /* Base styling */
 body,
 html {
@@ -65,16 +78,23 @@ legend,
 li,
 input,
 .text > .title-with-actions > h2,
-.text > .subtitle-container > h3 {
-  color: #111 !important;
+.text > .subtitle-container > h3,
+.ui.button {
+  color: var(--brand-black) !important;
   font-family: Ubuntu, sans-serif !important;
 }
 
-a {
+.ui {
+  font-family: Ubuntu, sans-serif !important;
+}
+
+a,
+.ui-widget-content a {
   color: #06c;
 }
 
-a:hover {
+a:hover,
+.ui-widget-content a:hover {
   color: #06c;
   text-decoration: underline;
 }
@@ -135,7 +155,7 @@ strong {
 }
 
 td {
-  color: #111;
+  color: var(--brand-black);
 }
 
 /* ---------- Content wrapper used on every page ---------- */

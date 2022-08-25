@@ -3,10 +3,10 @@
 .i-button.highlight,
 .i-button.highlight:not(.label):not(.borderless):not(.text-color),
 .ui.primary.button {
-  background: #0e8420;
-  border-color: #0e8420;
+  background: var(--button-green);
+  border-color: var(--button-green);
   border-radius: 0.125rem;
-  color: #fff !important;
+  color: var(--brand-white) !important;
   font-weight: 300;
   line-height: 1.5rem;
   padding: calc(0.4rem - 1px) 1rem;
@@ -14,9 +14,9 @@
 
 .i-button.highlight:not(.label):not(.borderless):not(.text-color):hover,
 .ui.primary.button:hover {
-  background: #0c6d1a;
-  border-color: #0c6d1a;
-  color: #fff;
+  background: var(--button-green_hover);
+  border-color: var(--button-green_hover);
+  color: var(--brand-white);
   text-decoration: none;
 }
 
@@ -24,31 +24,44 @@
   content: "";
 }
 
-.i-button.highlight.disabled {
-  background: #0c6d1a !important;
-  border-color: #0c6d1a !important;
+.i-button.highlight.disabled,
+.i-button.highlight:disabled {
+  background: var(--button-green_hover) !important;
+  border-color: var(--button-green_hover) !important;
   opacity: .33;
 }
 
 /* Style for standard buttons */
 
 .i-button:not(.subtle),
-.i-button:not(.label) {
-  background: #fff;
-  border-color: rgba(0, 0, 0, 0.56);
+.i-button:not(.label),
+.ui.modal .actions .ui.button:not(.highlighted):not(.primary) {
+  background: var(--brand-white);
+  border: 1px solid rgba(0, 0, 0, 0.56);
   border-radius: 0.125rem;
-  color: #111;
+  color: var(--brand-black);
   font-weight: 300;
   line-height: 1.5rem;
   padding: calc(0.4rem - 1px) 1rem;
 }
 
 .i-button:not(.subtle):hover,
-.i-button:not(.label):hover {
-  background: #fff;
-  background-color: #f2f2f2;
-  border-color: rgba(0, 0, 0, 0.56);
-  color: #111;
+.i-button:not(.label):hover,
+.ui.modal .actions .ui.button:not(.highlighted):not(.primary):hover {
+  background: var(--brand-white);
+  background-color: var(--brand-off-white);
+  border: 1px solid rgba(0, 0, 0, 0.56);
+  color: var(--brand-black);
   box-shadow: none;
   text-decoration: none;
+}
+
+.ui-button {
+  background: var(--brand-white) !important;
+  color: var(--brand-black);
+}
+
+.ui-button:hover {
+  background: var(--brand-off-white) !important;
+  color: var(--brand-black);
 }

@@ -1,9 +1,10 @@
 /* ---------- Style for notifications ---------- */
 
 /* Styles for dafualt tooltip */
-.qtip-default {
-  background: #111;
-  border: 1px solid #111;
+.qtip-default,
+.qtip-default.informational {
+  background: var(--brand-black);
+  border: 1px solid var(--brand-black);
   box-shadow: none;
   font-size: 0.875rem;
   padding: 0.25rem 0.5rem;
@@ -14,17 +15,22 @@
 }
 
 .qtip .qtip-tip {
-  color: #111;
+  color: var(--brand-black);
 }
 
-.qtip-content {
-  color: #fff !important;
-  line-height: 0.5rem;
+.qtip-content,
+.qtip-content p {
+  color: var(--brand-white) !important;
 }
+
+.qtip-default.informational a {
+  color: var(--brand-white);
+  text-decoration: underline;
+} 
 
 /* Style for danger tooltip */
 .qtip-default.qtip-danger {
-  background-color:#fff;
+  background-color:var(--brand-white);
   border-color: #c7162b;
   background-image: url("../../warning-icon.svg");
   background-repeat: no-repeat;
@@ -45,7 +51,7 @@
 
 /* For pop up corner message notifications */
 .corner-message.highlight {
-  background: #fff;
+  background: var(--brand-white);
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%), 0 0 3px 0 rgb(0 0 0 / 20%);
   border: none;
 }
@@ -57,7 +63,7 @@
 /* Styling for the information boxes */
 .ui.positive.message,
 .action-box.accept {
-  background-color: #fff;
+  background-color: var(--brand-white);
   background-image: url("../../information-icon.svg") !important;
   background-position: 1rem 1.15rem;
   background-repeat: no-repeat;
@@ -72,7 +78,7 @@
 
 .ui.positive.message::before,
 .action-box.accept::before {
-  background-color: #24598f;
+  background-color: var(--brand-blue);
   bottom: -1px;
   content: "";
   height: auto;

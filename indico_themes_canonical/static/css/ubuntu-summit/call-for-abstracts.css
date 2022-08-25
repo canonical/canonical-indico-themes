@@ -2,28 +2,100 @@
 
 /* Style for deadline progress bar */
 ul.steps li.completed .circle::before {
-  background-color: #24598f;
+  background-color: var(--brand-blue);
   border-color: #245987;
 }
 
 ul.steps li.completed .horizontal-line {
-  background-color: #24598f;
+  background-color: var(--brand-blue);
 }
 
 ul.steps .circle::before {
-  border-color: #AEA79F;
+  border-color: var(--brand-warm-grey);
 }
 
 ul.steps .horizontal-line {
-  background-color: #AEA79F;
+  background-color: var(--brand-warm-grey);
 }
 
-/* Style for modal form */
+/* Style for subimission modal forms */
 .ui-dialog-titlebar {
   font-size: 1.306rem;
   line-height: 2rem;
   font-weight: 300;
-  background-color: #ffff !important;
+  background-color: var(--brand-white)f !important;
+}
+
+.md-preview-wrapper.edit {
+  border: none;
+  background: none;
+}
+
+.wmd-panel,
+#person-link-field-person_links,
+.ui.attached.segment {
+  border-color: rgba(0, 0, 0, .56);
+  border-radius: 0;
+}
+
+.ui[class*="bottom attached"].buttons .button {
+  border-bottom: 1px solid rgba(0, 0, 0, .56);
+  background: none;
+  border-radius: 0;
+}
+
+.ui[class*="bottom attached"].buttons .button:last-child {
+  border-right: 1px solid rgba(0, 0, 0, .56);
+  border-radius: 0;
+}
+
+.ui[class*="bottom attached"].buttons .button:first-child {
+  border: none;
+  border-radius: 0;
+}
+
+.ui[class*="bottom attached"].buttons .button.disabled {
+  opacity: 1 !important;
+  color: var(--brand-warm-grey) !important;
+}
+
+.ui.buttons .button.toggle.active {
+background-color: var(--button-green) !important;
+}
+
+.ui.buttons .button.toggle.active:hover {
+  background-color: var(--button-green_hover) !important;
+}
+
+.i-checkbox input[type="checkbox"] {
+  align-self: center;
+}
+
+/* Style for 'add myself' */
+a.ui.blue.label {
+  background-color: var(--brand-blue) !important;
+  border-color: var(--brand-blue) !important;
+}
+
+a.ui.blue.label:hover {
+  background-color: var(--brand-blue) !important;
+}
+
+/* Style for 'search' modal */
+.ui.modal > .header:not(.ui) {
+  font-size: 1.306rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+/* Style for 'enter manually' modal */
+button[form="final-modal-form-person-link-details"] {
+  height: 100%;
+}
+
+/* Style for 'unsaved changes' modal */
+.ui-dialog .ui-dialog-buttonpane {
+  background: none;
 }
 
 /* ---------- Responsiveness ---------- */
