@@ -1,5 +1,13 @@
 /* ---------- Style for notifications ---------- */
 
+/* Style for cta boxes */
+.action-box.highlight {
+  background: var(--brand-white);
+  border: none;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
+    0 0 3px 0 rgb(0 0 0 / 20%);
+}
+
 /* Styles for dafualt tooltip */
 .qtip-default,
 .qtip-default.informational {

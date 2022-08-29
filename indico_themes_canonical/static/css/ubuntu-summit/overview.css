@@ -5,14 +5,6 @@
   font-weight: 400;
 }
 
-/* Registration call-out box */
-.action-box.highlight {
-  background: var(--brand-white);
-  border: none;
-  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
-    0 0 3px 0 rgb(0 0 0 / 20%);
-}
-
 /* Attach materials button */
 .i-button.text-color:not(.color-on-hover) {
   color: var(--brand-warm-grey);

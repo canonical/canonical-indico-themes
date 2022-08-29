@@ -34,10 +34,9 @@
 /* 
 TEMP STYLES
 */
-.confSubTitleBox,
 .support_box,
-.event-page-header,
-div.footer {
+.confSubTitleBox,
+.header {
   display: none;
 }
 
@@ -47,6 +46,7 @@ div.footer {
   --full-vertical-padding: 20px;
   --brand-black: #111;
   --brand-blue: #24598F;
+  --border-grey: rgba(0, 0, 0, .56);
   --brand-white: #fff;
   --brand-warm-grey: #AEA79F;
   --brand-off-white: #f2f2f2;
