@@ -1,0 +1,54 @@
+/* Style for the highlight buttons */
+
+.i-button.highlight,
+.i-button.highlight:not(.label):not(.borderless):not(.text-color),
+.ui.primary.button {
+  background: #0e8420;
+  border-color: #0e8420;
+  border-radius: 0.125rem;
+  color: #fff !important;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: calc(0.4rem - 1px) 1rem;
+}
+
+.i-button.highlight:not(.label):not(.borderless):not(.text-color):hover,
+.ui.primary.button:hover {
+  background: #0c6d1a;
+  border-color: #0c6d1a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.i-button.next::after {
+  content: "";
+}
+
+.i-button.highlight.disabled {
+  background: #0c6d1a !important;
+  border-color: #0c6d1a !important;
+  opacity: .33;
+}
+
+/* Style for standard buttons */
+
+.i-button,
+.i-button:not(.label) {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.56);
+  border-radius: 0.125rem;
+  color: #111;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: calc(0.4rem - 1px) 1rem;
+}
+
+.i-button:hover,
+.i-button:not(.label):hover {
+  background: #fff;
+  background-color: #f2f2f2;
+  border-color: rgba(0, 0, 0, 0.56);
+  color: #111;
+  box-shadow: none;
+  text-decoration: none;
+}

@@ -1,0 +1,155 @@
+/* ---------- Styles for the menu (side-navigation) ---------- */
+
+/* Wrapper around the menu */
+.conf_leftMenu {
+  display: block;
+  float: left;
+  width: 220px;
+}
+
+/* Styles for the menu box (to override the deafults) */
+#outer {
+  background: none;
+  border: none;
+  margin-top: 12.432px;
+}
+
+/* Styles for all menu items */
+#outer li a {
+  font-family: Ubuntu, sans-serif !important;
+  font-size: 1rem;
+  padding: 0.25rem 1rem 0.25rem 1.5rem;
+}
+
+#outer li:not(.selected) a {
+  color: rgb(0 0 0 / 75%);
+}
+
+#outer li:is(.selected) a {
+  border-left: 3px solid #111;
+}
+
+.menuConfSelected {
+  border: none;
+}
+
+.menuConfTitle.selected > a,
+.menuConfMiddleCell.selected > a {
+  background: #e6e6e6;
+  color: #111;
+}
+
+#outer .menuConfMiddleCell > a {
+  background: none;
+  font-weight: 300;
+  padding-left: 3rem;
+}
+
+.conf_leftMenu #outer .no-link {
+  font-weight: 400;
+  color: #111;
+}
+
+.conf_leftMenu #outer .no-link:hover {
+  color: #111;
+}
+
+/*  Menu item when doing mouseover */
+#outer li:is(.selected) a:hover {
+  background: #e6e6e6;
+}
+
+#outer li:not(.selected) a:not(.no-link):hover {
+  background: #f2f2f2;
+  color: #111;
+}
+
+/* Navigation toggle button */
+.navigationToggleCont {
+  margin: 0 0 15px;
+}
+
+.navigationToggleBtn {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.56);
+  border-radius: 0.125rem;
+  color: #111;
+  display: none;
+  line-height: 1.5rem;
+  padding: calc(0.4rem - 1px) 1rem;
+  text-align: center;
+}
+
+.navigationToggleBtn:hover {
+  background-color: #f2f2f2;
+  color: #111;
+  text-decoration: none;
+}
+
+.navigationToggleBtn[aria-expanded="true"] {
+  background-color: #e6e6e6;
+}
+
+/* Utility classes for the side navigation */
+.is-drawer-hidden {
+  display: none;
+}
+
+.is-drawer-expanded {
+  display: block !important;
+}
+
+/* ---------- Media queries ---------- */
+
+@media screen and (min-width: 1251px) {
+  .conf_leftMenu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navigationToggleCont > .navigationToggleBtn {
+    display: block;
+  }
+
+  #confSectionsBox > .conf_leftMenu {
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    width: auto;
+    top: 114px;
+  }
+
+  .navigationToggleCont {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .conf_leftMenu {
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
+      0 0 3px 0 rgb(0 0 0 / 20%);
+    display: none;
+    position: absolute;
+    top: 102px;
+    z-index: 5;
+  }
+
+  .conf_leftMenu #outer {
+    margin: 0;
+  }
+
+  #outer li:is(.selected) a {
+    border-left: none;
+  }
+
+  #outer li a {
+    font-size: 1rem;
+    padding: 0.25rem 1rem 0.25rem 1.5rem;
+  }
+
+  .navigationToggleBtn {
+    display: inline;
+  }
+}

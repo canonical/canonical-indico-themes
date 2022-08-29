@@ -1,5 +1,8 @@
 .idea/
 indico-3*
 *.egg*
+*egg-info*
 *.pyc
 __pycache__/
+node_modules
+build

@@ -1,0 +1,73 @@
+/* ---------- Style for general forms ---------- */
+
+/* Style for form field container */
+.i-form .form-group .form-field {
+  padding-left: 0;
+}
+
+/* Style for form labels */
+.form-label > label {
+  font-weight: 400;
+}
+
+/* Style for text input boxes */
+textarea,
+select,
+input[type]:not([type=number]):not([type=checkbox]):not([type=radio]):not([type=checkbox]):not([type=submit]) {
+  border: 1px solid rgba(0, 0, 0, .56);
+  border-radius: 0;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 12%);
+  color: #111;
+  font-weight: 300;
+  min-width: 10em;
+  padding: calc(0.4rem - 1px) 0.5rem;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+textarea:focus,
+select:focus,
+input[type]:not([type=number]):not([type=checkbox]):not([type=radio]):not([type=checkbox]):not([type=submit]):focus {
+  border: 1px solid rgba(0, 0, 0, .56);
+  border-radius: 0;
+  outline: 0.1875rem solid #2e96ff;
+  outline-offset: -0.1875rem;
+}
+
+/* Style for checkboxes */
+.i-checkbox input {
+  float: none;
+  height: 1rem;
+  margin: 0;
+  position: absolute;
+  width: 1rem;
+}
+
+.i-checkbox input::before {
+  background-color: #06c;
+  border-color: #06c;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .56);
+  border-radius: 0.125rem;
+  height: 1rem;
+  left: 0;
+  outline-offset: 1px;
+  top: calc(0.932em - 1rem + 0.15rem);
+  width: 1rem;
+  transition-duration: .333s;
+  transition-property: background-color, border-color;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+}
+
+.i-checkbox input::after {
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  height: 0.375rem;
+  left: 0.1875rem;
+  top: calc(0.932em - 1rem + 0.1875rem + 0.15rem);
+  transform: rotate(-45deg);
+  width: 0.625rem;
+  content: "";
+  opacity: 1;
+}

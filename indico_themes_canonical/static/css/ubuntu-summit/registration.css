@@ -1,0 +1,180 @@
+/* ---------- Style for registration menu ---------- */
+
+/* Style for registration menu table */
+.i-table-widget {
+  border: none;
+}
+
+.i-table-widget th {
+  background: none;
+}
+
+.i-table-widget tr > th {
+  font-size: 0.765625rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+/* ---------- Style for registration form ---------- */
+
+/* Remove/overide default styles */
+.info-message-box {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.info-message-box .icon,
+.action-box .icon,
+.action-box.accept .toolbar {
+  display: none;
+}
+
+.page-content > .action-box.accept > .section > .text .label {
+  color: #111;
+  font-weight: 300;
+}
+
+#registration-summary .i-box-header .i-box-metadata span {
+  color: #111;
+}
+
+#registration-summary .i-box-header .i-box-metadata .label {
+  font-weight: 400;
+}
+
+/* Style contact-us info icon */
+i.icon.icon-phone {
+  margin-right: 15px;
+  padding-left: 20px;
+}
+
+.icon-phone:before {
+  content: "";
+  height: 35px;
+  margin-left: -20px;
+  position: absolute;
+  width: 35px;
+}
+
+i.icon:before {
+  background: url("https://assets.ubuntu.com/v1/f22f6ded-get-in-touch_chat.svg") !important;
+}
+
+.infogrid.condensed .infoline {
+  width: 100%;
+}
+
+/* Styling for the information boxes */
+.ui.positive.message,
+.action-box.accept {
+  background-color: #fff;
+  background-image: url("../../information-icon.svg") !important;
+  background-position: 1rem 1.15rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0 0.125rem 0.125rem 0;
+  box-shadow: none;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+
+.ui.positive.message::before,
+.action-box.accept::before {
+  background-color: #24598f;
+  bottom: -1px;
+  content: "";
+  height: auto;
+  left: -1px;
+  position: absolute;
+  top: -1px;
+  width: 0.1875rem;
+  z-index: 1;
+}
+
+/* Styles for the form */
+.regform-section {
+  box-shadow: none;
+}
+
+.regform-section .i-box-header {
+  background: #fff;
+}
+
+.regform-section .i-box-header .i-box-title {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.ui.form .field > label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: .75rem;
+}
+
+.ui.form input {
+  font-weight: 300;
+}
+
+.ui.form .field .field {
+  margin-bottom: 1rem;
+}
+
+/* ---------- Style for registration summary ---------- */
+
+.regform-done {
+  border: none;
+  box-shadow: none;
+}
+
+.regform-done .i-box-header {
+  background-color: #fff;
+}
+
+.regform-done .i-box-header .i-box-title {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.regform-done .regform-done-caption,
+.regform-done .regform-done-data {
+  border: none;
+  color: #111;
+  font-weight: 300;
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  text-align: left;
+}
+
+.regform-done table.registration-info tr.regform-done-title td {
+  font-size: 0.77rem;
+  font-weight: 400;
+  line-height: 1rem;
+  padding: 0.75rem 0.5rem 0.75rem 0;
+  text-transform: uppercase;
+}
+
+.regform-done table.registration-info tr.regform-done-title td {
+  padding-top: 1.5rem;
+}
+
+.regform-done tr {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* ---------- Media queries ---------- */
+
+@media screen and (max-width: 550px) {
+  #registration-summary .i-box-header .i-box-metadata .label {
+    clear: left;
+    float: left;
+    margin: 0;
+  }
+
+  #registration-summary .i-box-header .i-box-metadata .content {
+    float: left;
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "lint-css": "npx stylelint '**/*.css'",
+    "fix-css": "npx stylelint '**/*.css' --fix"
+  },
+  "devDependencies": {
+    "stylelint": "^14.10.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^27.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0"
+  }
+}

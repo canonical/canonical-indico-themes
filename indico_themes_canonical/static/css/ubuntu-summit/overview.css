@@ -1,0 +1,55 @@
+/* ---------- Styles for the main page content ---------- */
+
+/* The content container */
+.col2 {
+  margin: 0;
+  width: 100%;
+}
+
+.conferenceDetails .description {
+  margin: 0;
+}
+
+/* Date and time info */
+.infoline .label {
+  font-weight: 400;
+}
+
+/* Registration call-out box */
+.action-box.highlight {
+  background: #fff;
+  border: none;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
+    0 0 3px 0 rgb(0 0 0 / 20%);
+}
+
+/* ---------- Media queries ---------- */
+
+@media screen and (max-width: 550px) {
+  .infoline.date,
+  .infoline.location,
+  .infoline.chairs,
+  .infoline.material {
+    width: 100%;
+  }
+
+  .action-box.highlight .section {
+    flex-flow: row wrap;
+  }
+
+  .action-box.highlight .section .toolbar {
+    width: 100%;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #confSectionsBox {
+    width: 100% !important;
+  }
+
+  .confBodyBox {
+    margin-left: 0 !important;
+  }
+}

@@ -1,0 +1,183 @@
+/*
+ * Copyright 2022 Canonical Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+*/
+
+/* Font delcaration */
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;";
+
+/* Imports */
+@import "_buttons.css";
+@import "_forms.css";
+@import "_icons.css";
+@import "contribution-list.css";
+@import "header.css";
+@import "overview.css";
+@import "registration.css";
+@import "scientific-program.css";
+@import "side-navigation.css";
+@import "surveys.css";
+@import "call-for-proposals.css";
+
+/* 
+TEMP STYLES
+*/
+.confSubTitleBox,
+.support_box,
+#session-bar {
+  display: none;
+}
+/* Custom properties */
+:root {
+  --full-width: 1242px;
+  --full-vertical-padding: 20px;
+}
+
+/* Base styling */
+body,
+html {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+  overflow: none;
+}
+
+/* Manual override for base styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+legend,
+li,
+input,
+.text > .title-with-actions > h2,
+.text > .subtitle-container > h3 {
+  color: #111 !important;
+  font-family: Ubuntu, sans-serif !important;
+}
+
+a {
+  color: #06c;
+}
+
+a:hover {
+  color: #06c;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0 0 1.1rem;
+  padding: 0.4005rem 0 0;
+}
+
+h6 {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0 0 1.1rem;
+  padding: 0.338rem 0 0;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 1.1rem;
+  padding: 0.401rem 0 0;
+}
+
+h4 {
+  font-size: 1.306122449rem;
+  line-height: 2rem;
+  margin-bottom: 0.95rem;
+  padding-top: 0.051rem;
+}
+
+h3 {
+  font-size: 1.7059558517rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  margin-bottom: 0.9rem;
+  padding-top: 0.101rem;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 2.2281872349rem;
+  line-height: 3rem;
+  margin-bottom: 0.8rem;
+  padding-top: 0.201rem;
+}
+
+h1 {
+  font-size: 2.228rem;
+  font-weight: 100;
+  line-height: 3rem;
+  margin: 0 0 0.835rem;
+  padding: 0.166rem 0 0;
+}
+
+strong {
+  font-weight: 400;
+}
+
+td {
+  color: #111;
+}
+
+/* The wrapper of the whole conference page. */
+.conf {
+  border: none;
+  margin: auto;
+  width: 100%;
+}
+
+/* Wrapper for content and side-navigation */
+#confSectionsBox {
+  margin: 0 auto;
+  padding: 64px var(--full-vertical-padding);
+  position: relative;
+  width: var(--full-width);
+}
+
+/* Content wrapper that has a left margin to emcompass the side-navigation */
+.confBodyBox {
+  margin-left: 250px;
+}
+
+/* Styles for tooltip */
+.qtip-default {
+  background: #111;
+  border: 1px solid #111;
+  box-shadow: none;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.qtip {
+  min-width: 40px;
+}
+.qtip .qtip-tip {
+  color: #111;
+}
+
+.qtip-content {
+  color: #fff !important;
+  line-height: 0.5rem;
+}

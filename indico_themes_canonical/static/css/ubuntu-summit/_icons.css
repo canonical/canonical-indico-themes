@@ -1,0 +1,34 @@
+/* Styl for calander and clock icon */
+.generic-data .header-data::before {
+  color: #AEA79F;
+}
+
+/* Style for the ticket icon */
+.icon-ticket::before {
+  color: #AEA79F;
+}
+
+/* Style for location icon */
+.icon-location::before {
+  color: #AEA79F;
+}
+
+/* Style for speaker icon */
+.speaker-list .icon-user::before {
+  color: #AEA79F;
+}
+
+/* Style for paperclip icon */
+.icon-attachment::before {
+  color: #AEA79F;
+}
+
+/* Style for Date/Time icon */
+.icon-time::before {
+  color: #AEA79F;
+}
+
+/* Style for chairperson icon */
+.icon-user-chairperson::before {
+  color: #AEA79F;
+}
