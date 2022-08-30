@@ -36,26 +36,6 @@
   text-decoration: underline;
 } 
 
-/* Style for danger tooltip */
-.qtip-default.qtip-danger {
-  background-color:var(--brand-white);
-  border-color: #c7162b;
-  background-image: url("../../warning-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 8% 55%;
-}
-
-.qtip-default.qtip-danger .qtip-content {
-  margin-left: 20px;
-}
-
-.qtip-default.qtip-danger .qtip-content li {
-  color: #c7162b !important;
-}
-
-.qtip-default.qtip-danger {
-  display: none;
-}
 
 /* For pop up corner message notifications */
 .corner-message.highlight {

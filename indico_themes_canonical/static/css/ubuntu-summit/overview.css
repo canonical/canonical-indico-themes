@@ -1,8 +1,93 @@
 /* ---------- Styles for the main page content ---------- */
 
 /* Date and time info */
-.infoline .label {
+.infoline {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.infoline,
+.infoline time {
+  font-size: 1rem;
+}
+
+.infoline span.icon-time {
+  display: none;
+}
+
+.infoline.date time {
+  margin-left: 7rem;
+}
+
+.infoline.date div.text span.label {
+  display: inline-block;
+  font-size: 1rem;
   font-weight: 400;
+  width: 0;
+}
+
+.infoline.date div.text div {
+  margin-bottom: 0.5rem;
+}
+
+.infoline.date div.text .timezone {
+  font-size: 1rem;
+  margin-left: 131px;
+}
+
+/* Location info */
+.infoline.location span {
+  display: none;
+}
+
+.infoline.location:before {
+  content: "Location";
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 0;
+}
+
+.infoline.location div.text {
+  margin-left: 7rem;
+}
+
+.infoline.location div.text div {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Chairperson info */
+.infoline.chairs span {
+  display: none;
+}
+
+.infoline.chairs:before {
+  content: "Chairs";
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 0;
+}
+
+.infoline.chairs .chair_list {
+  margin-left: 7rem;
+}
+
+/* Attach documents */
+.infoline.material-list span.icon-attachment {
+  display: none;
+}
+
+.infoline.material-list:before {
+  content: "Resources";
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 0;
+}
+
+.infoline.material-list .attachments-box {
+  margin-left: 7rem;
 }
 
 /* Attach materials button */
@@ -38,7 +123,7 @@
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1450px) {
   #confSectionsBox {
     width: 100% !important;
   }
