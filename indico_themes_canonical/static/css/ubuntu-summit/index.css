@@ -35,8 +35,7 @@
 TEMP STYLES
 */
 .support_box,
-.confSubTitleBox,
-.header {
+.confSubTitleBox {
   display: none;
 }
 /* Custom properties */
@@ -62,11 +61,12 @@ TEMP STYLES
 :root {
   --full-width: 1442px;
   --full-vertical-padding: 20px;
+  --global-margin-left: 350px;
   --brand-black: #111;
-  --brand-blue: #24598F;
-  --border-grey: rgba(0, 0, 0, .56);
+  --brand-blue: #24598f;
+  --border-grey: rgba(0, 0, 0, 0.56);
   --brand-white: #fff;
-  --brand-warm-grey: #AEA79F;
+  --brand-warm-grey: #aea79f;
   --brand-off-white: #f2f2f2;
   --button-green: #0e8420;
   --button-green_hover: #0c6d1a;
@@ -121,6 +121,7 @@ p {
   font-size: 1rem;
   margin: 0 0 1.1rem;
   padding: 0.4005rem 0 0;
+  max-width: 40rem;
 }
 
 h6 {
@@ -153,15 +154,15 @@ h3 {
 }
 
 h2 {
-  font-weight: 100;
   font-size: 2.228rem;
+  font-weight: 100;
   line-height: 3rem;
   margin-bottom: 0.8rem;
   padding-top: 0.201rem;
 }
 
 h1 {
-  font-size: 2.910rem;
+  font-size: 2.91rem;
   font-weight: 100;
   line-height: 3.5rem;
   margin: 0 0 0.8rem;
@@ -195,7 +196,7 @@ td {
 
 /* Content wrapper that has a left margin to emcompass the side-navigation */
 .confBodyBox {
-  margin-left: 250px;
+  margin-left: var(--global-margin-left);
 }
 
 /* More content wrappers */

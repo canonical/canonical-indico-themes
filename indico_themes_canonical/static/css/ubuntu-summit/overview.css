@@ -1,5 +1,10 @@
 /* ---------- Styles for the main page content ---------- */
 
+/* ---------- Style for the Infogrid container date/location/chairs etc ---------- */
+
+.conferenceDetails .infogrid {
+  margin-bottom: 2rem;
+}
 /* Date and time info */
 .infoline {
   margin-top: 1.5rem;
@@ -20,9 +25,11 @@
 
 .infoline.date div.text span.label {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
+  margin-top: 2px;
   width: 0;
+  text-transform: uppercase;
 }
 
 .infoline.date div.text div {
@@ -42,9 +49,11 @@
 .infoline.location:before {
   content: "Location";
   font-family: Ubuntu, sans-serif;
+  font-size: 0.9rem;
   font-weight: 400;
-  font-size: 1rem;
+  margin-top: 2px;
   width: 0;
+  text-transform: uppercase;
 }
 
 .infoline.location div.text {
@@ -64,9 +73,11 @@
 .infoline.chairs:before {
   content: "Chairs";
   font-family: Ubuntu, sans-serif;
+  font-size: 0.9rem;
   font-weight: 400;
-  font-size: 1rem;
+  margin-top: 2px;
   width: 0;
+  text-transform: uppercase;
 }
 
 .infoline.chairs .chair_list {
@@ -81,9 +92,10 @@
 .infoline.material-list:before {
   content: "Resources";
   font-family: Ubuntu, sans-serif;
+  font-size: 0.9rem;
   font-weight: 400;
-  font-size: 1rem;
   width: 0;
+  text-transform: uppercase;
 }
 
 .infoline.material-list .attachments-box {
@@ -101,6 +113,31 @@
   color: #333333;
 }
 
+/* CTA's at bottom of page */
+.conferenceDetails .action-box.highlight {
+  box-shadow: none;
+  border-top: 1px solid var(--brand-warm-grey);
+  margin-bottom: 2rem;
+  padding: 1rem 0 0 0;
+}
+
+.conferenceDetails .action-box.highlight .section {
+  display: block;
+}
+
+.conferenceDetails .action-box.highlight .label {
+  display: inline-block;
+  font-size: 1.706rem;
+  font-weight: 100;
+  line-height: 2rem;
+  margin-bottom: 0.95rem;
+  padding-top: 0.051rem;
+}
+
+.conferenceDetails .action-box.highlight .toolbar {
+  padding: 0;
+  margin-top: 1rem;
+}
 
 /* ---------- Media queries ---------- */
 
@@ -117,13 +154,13 @@
   }
 
   .action-box.highlight .section .toolbar {
-    width: 100%;
-    padding: 0;
     margin-top: 0.5rem;
+    padding: 0;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1250px) {
   #confSectionsBox {
     width: 100% !important;
   }

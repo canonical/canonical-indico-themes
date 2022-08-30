@@ -113,25 +113,25 @@ function buildHeader() {
   // Append new header elements
   const fullHeaderCont = document.querySelector(".confTitleBox");
 
+  const headerLogoCont = document.createElement("div");
+  headerLogoCont.classList.add("headerLogoCont");
   const headerLogo = document.createElement("img");
+  headerLogo.classList.add("headerLogo");
   headerLogo.src = "https://assets.ubuntu.com/v1/809d5b1a-czech-flag.svg"
+  headerLogoCont.append(headerLogo);
 
   const headerTitle = document.createElement("h1");
   headerTitle.innerText = "Ubuntu Summit 2022";
 
   const headerSubtitle = document.createElement("h2");
-  headerSubtitle.innerText = "Prague, Czech Republic, November 7th-9th, 2022";
-
-  const headerImage = document.createElement("img");
-  headerImage.classList.add("headerImage");
-  headerImage.src = "https://assets.ubuntu.com/v1/25294081-community-support-thin-white.svg";
+  headerSubtitle.classList.add("headerSubtitle");
+  headerSubtitle.innerText = "Prague, Czech Republic\nNovember 7th-9th, 2022";
   
-  headerTitleCont.append(headerLogo);
   headerTitleCont.append(headerTitle);
   headerTitleCont.append(headerSubtitle);
-  fullHeaderCont.append(headerImage);
-
+  fullHeaderCont.prepend(headerLogoCont);
 }
+
 /* --------- Setup on window load ---------- */
 window.addEventListener("load", function() {
   addMetaTag();

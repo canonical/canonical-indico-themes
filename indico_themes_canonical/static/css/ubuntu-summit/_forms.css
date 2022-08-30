@@ -13,9 +13,9 @@
 /* Style for text input boxes */
 textarea,
 select,
-input[type]:not([type=checkbox]):not([type=radio]):not([type=checkbox]):not([type=submit]),
+input[type]:not([type="checkbox"]):not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
 .ui.form textarea {
-  border: 1px solid rgba(0, 0, 0, .56);
+  border: 1px solid rgba(0, 0, 0, 0.56);
   border-radius: 0;
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 12%);
   color: var(--brand-black);
@@ -27,8 +27,8 @@ input[type]:not([type=checkbox]):not([type=radio]):not([type=checkbox]):not([typ
 
 textarea:focus,
 select:focus,
-input[type]:not([type=checkbox]):not([type=radio]):not([type=checkbox]):not([type=submit]):focus {
-  border: 1px solid rgba(0, 0, 0, .56);
+input[type]:not([type="checkbox"]):not([type="radio"]):not([type="checkbox"]):not([type="submit"]):focus {
+  border: 1px solid rgba(0, 0, 0, 0.56);
   border-radius: 0;
   outline: 0.1875rem solid #2e96ff;
   outline-offset: -0.1875rem;
@@ -36,29 +36,29 @@ input[type]:not([type=checkbox]):not([type=radio]):not([type=checkbox]):not([typ
 
 textarea,
 select,
-input[type]:not([type=number]):not([type=checkbox]):not([type=radio]):not([type=checkbox]):not([type=submit]) {
+input[type]:not([type="number"]):not([type="checkbox"]):not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
   width: 100%;
 }
 
 /* Style for checkboxes */
 .i-checkbox input,
 .ui.checkbox label:before {
+  border-color: var(--brand-black) 111;
   height: 1rem;
   margin: 0;
-  width: 1rem;
   vertical-align: middle;
-  border-color: var(--brand-black)111;
+  width: 1rem;
 }
 
 .i-checkbox input:focus {
   outline: 0.1875rem solid #2e96ff;
   outline-offset: 0.1rem;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 .ui.checkbox label:hover:before,
 .ui.checkbox input:checked ~ label:before {
-  border-color: var(--brand-black)111;
+  border-color: var(--brand-black) 111;
 }
 .i-checkbox .checkbox-label label {
   font-weight: 300;
@@ -67,38 +67,45 @@ input[type]:not([type=number]):not([type=checkbox]):not([type=radio]):not([type=
 /* Style for radio buttons */
 .i-radio input {
   height: 1rem;
-  width: 1rem;
   margin-top: 5px;
+  width: 1rem;
 }
 
 .i-radio input:focus {
   outline: 0.1875rem solid #2e96ff;
   outline-offset: 0.1rem;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 .i-radio label {
   font-weight: 300;
 }
 
-#survey-questionnaire .radio-item-0:not(.inline-vcentered) input:not([required]) + label {
+#survey-questionnaire
+  .radio-item-0:not(.inline-vcentered)
+  input:not([required])
+  + label {
   color: var(--brand-black);
 }
 
 /* Style for the yes/no button styled radio inputs */
-.i-selection input[type='radio']:checked+label:not(.label):not(.borderless):not(.text-color) {
+.i-selection
+  input[type="radio"]:checked
+  + label:not(.label):not(.borderless):not(.text-color) {
   background: #e6e6e6;
   border-color: rgba(0, 0, 0, 0.56);
   color: var(--brand-black);
 }
 
-.i-selection input[type='radio']:checked+label:not(.label):not(.borderless):not(.text-color):hover {
-  background: #F2F1F0;
+.i-selection
+  input[type="radio"]:checked
+  + label:not(.label):not(.borderless):not(.text-color):hover {
+  background: #f2f1f0;
   border-color: rgba(0, 0, 0, 0.56);
   color: var(--brand-black);
 }
 /* Style for the required asterix '*' */
-.i-form .form-group .form-label>.required {
+.i-form .form-group .form-label > .required {
   color: var(--brand-black);
   line-height: 1rem;
   right: 0.3rem;

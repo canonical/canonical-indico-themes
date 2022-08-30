@@ -34,14 +34,14 @@
 .qtip-default.informational a {
   color: var(--brand-white);
   text-decoration: underline;
-} 
-
+}
 
 /* For pop up corner message notifications */
 .corner-message.highlight {
   background: var(--brand-white);
-  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%), 0 0 3px 0 rgb(0 0 0 / 20%);
   border: none;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
+    0 0 3px 0 rgb(0 0 0 / 20%);
 }
 
 .corner-message .corner-message-action {
@@ -52,7 +52,7 @@
 .ui.positive.message,
 .action-box.accept {
   background-color: var(--brand-white);
-  background-image: url("../../information-icon.svg") !important;
+  background-image: url("../../files/information-icon.svg") !important;
   background-position: 1rem 1.15rem;
   background-repeat: no-repeat;
   background-size: 1rem;

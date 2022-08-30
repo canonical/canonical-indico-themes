@@ -20,33 +20,33 @@ ul.steps .horizontal-line {
 
 /* Style for subimission modal forms */
 .ui-dialog-titlebar {
+  background-color: var(--brand-white) f !important;
   font-size: 1.306rem;
-  line-height: 2rem;
   font-weight: 300;
-  background-color: var(--brand-white)f !important;
+  line-height: 2rem;
 }
 
 .md-preview-wrapper.edit {
-  border: none;
   background: none;
+  border: none;
 }
 
 .wmd-panel,
 #person-link-field-person_links,
 .ui.attached.segment {
-  border-color: rgba(0, 0, 0, .56);
+  border-color: rgba(0, 0, 0, 0.56);
   border-radius: 0;
 }
 
 .ui[class*="bottom attached"].buttons .button {
-  border-bottom: 1px solid rgba(0, 0, 0, .56);
   background: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.56);
   border-radius: 0;
 }
 
 .ui[class*="bottom attached"].buttons .button:last-child {
-  border-right: 1px solid rgba(0, 0, 0, .56);
   border-radius: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.56);
 }
 
 .ui[class*="bottom attached"].buttons .button:first-child {
@@ -55,12 +55,12 @@ ul.steps .horizontal-line {
 }
 
 .ui[class*="bottom attached"].buttons .button.disabled {
-  opacity: 1 !important;
   color: var(--brand-warm-grey) !important;
+  opacity: 1 !important;
 }
 
 .ui.buttons .button.toggle.active {
-background-color: var(--button-green) !important;
+  background-color: var(--button-green) !important;
 }
 
 .ui.buttons .button.toggle.active:hover {
@@ -84,8 +84,8 @@ a.ui.blue.label:hover {
 /* Style for 'search' modal */
 .ui.modal > .header:not(.ui) {
   font-size: 1.306rem;
-  line-height: 2rem;
   font-weight: 300;
+  line-height: 2rem;
 }
 
 /* Style for 'enter manually' modal */

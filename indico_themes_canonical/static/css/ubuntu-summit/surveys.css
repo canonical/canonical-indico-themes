@@ -13,10 +13,10 @@
 
 .i-form fieldset legend {
   font-size: 1.306rem;
+  font-weight: 300;
   line-height: 2rem;
   margin-bottom: 0.95rem;
   padding-top: 0.051rem;
-  font-weight: 300;
 }
 
 .i-form.vertical .form-group-footer {

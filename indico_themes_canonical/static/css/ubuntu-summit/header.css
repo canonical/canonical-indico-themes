@@ -5,14 +5,28 @@ Wraps around the upper part of the conference header.
 */
 .confheader {
   background-blend-mode: multiply, multiply, normal;
-background-image: linear-gradient(150deg, rgba(228, 228, 228, 0.54) 0%, rgba(228, 228, 228, 0.54) 54.9%, rgba(228, 228, 228, 0) 55%, rgba(228, 228, 228, 0) 100%), linear-gradient(to bottom left, rgba(216, 216, 216, 0.54) 0%, rgba(216, 216, 216, 0.54) 49.9%, rgba(216, 216, 216, 0) 50%, rgba(216, 216, 216, 0) 100%), linear-gradient(-89deg, #e95420 0%, #772953 42%, #2c001e 94%);
+  background-image: linear-gradient(
+      150deg,
+      rgba(228, 228, 228, 0.54) 0%,
+      rgba(228, 228, 228, 0.54) 54.9%,
+      rgba(228, 228, 228, 0) 55%,
+      rgba(228, 228, 228, 0) 100%
+    ),
+    linear-gradient(
+      to bottom left,
+      rgba(216, 216, 216, 0.54) 0%,
+      rgba(216, 216, 216, 0.54) 49.9%,
+      rgba(216, 216, 216, 0) 50%,
+      rgba(216, 216, 216, 0) 100%
+    ),
+    linear-gradient(-89deg, #e95420 0%, #772953 42%, #2c001e 94%);
   background-position: 0% 0%, top right, right 0 bottom 4rem, right bottom,
     0% 0%;
+  background-position: bottom left, bottom 0 right, 0% 0%;
   background-repeat: no-repeat;
-  background-size: 100% calc(100% - 4rem), 50% 100%, 100% 4rem, 100% 4rem, auto;
-  margin-bottom: -4rem;
+  background-size: 100% 100%, 60% 100%, auto;
+  color: #fff;
   overflow: hidden;
-  padding: 0 var(--full-vertical-padding) 12rem !important;
   position: relative;
 }
 
@@ -21,11 +35,11 @@ Wraps around the title box
 */
 .confTitleBox {
   background: none;
-  text-align: left;
-  margin: auto;
-  width: var(--full-width);
-  padding: 80px 20px;
   display: flex;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: left;
+  width: var(--full-width);
 }
 
 /*
@@ -33,37 +47,50 @@ The style for the title text.
 */
 .confTitle {
   display: inline-block;
-  margin: auto 0;
-  width: 60%;
+  margin-left: var(--global-margin-left);
+  width: 100%;
 }
 
-.headerImage {
-  margin: auto;
-  margin-right: 0;
+.headerLogoCont {
+  position: absolute;
+  top: 89px;
+}
+
+.headerLogo {
+  display: block;
+  margin-left: 0;
+  height: 62px;
 }
 
 .confTitleBox > .confTitle > h1 {
   color: var(--brand-white) !important;
   font-weight: 100;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .confTitleBox > .confTitle > h2 {
   color: var(--brand-white) !important;
-  font-size: 1.706rem;
-  margin-top: 0;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 /* ---------- Responsive ---------- */
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1250px) {
   .confTitleBox {
     width: 100%;
+    display: block;
   }
 
   .confTitle {
     width: 100%;
+    margin-left: 0;
   }
-  .headerImage {
-    display: none;
+
+  .headerLogoCont {
+    width: 100%;
+    display: block;
+    position: static;
+    margin-bottom: 1rem;
   }
 }
