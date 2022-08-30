@@ -101,7 +101,7 @@
 
 /* ---------- Media queries ---------- */
 
-@media screen and (min-width: 1451px) {
+@media screen and (min-width: 1251px) {
   .conf_leftMenu {
     display: block;
   }
@@ -122,7 +122,7 @@
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1250px) {
   .conf_leftMenu {
     background: var(--brand-white);
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),

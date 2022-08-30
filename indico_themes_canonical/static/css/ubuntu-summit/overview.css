@@ -172,7 +172,7 @@
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1250px) {
   #confSectionsBox {
     width: 100% !important;
   }
