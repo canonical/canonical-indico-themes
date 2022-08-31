@@ -160,16 +160,6 @@
   .infoline.material {
     width: 100%;
   }
-
-  .action-box.highlight .section {
-    flex-flow: row wrap;
-  }
-
-  .action-box.highlight .section .toolbar {
-    margin-top: 0.5rem;
-    padding: 0;
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 1250px) {
