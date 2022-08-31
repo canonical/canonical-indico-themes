@@ -105,7 +105,7 @@ function addMetaTag() {
 }
 
 /* Build custom header */
-function buildHeader() {
+function buildHeaderStrip() {
   // Remove unused title
   const headerTitleCont = document.querySelector(".confTitle");
   const unusedTitle = headerTitleCont.querySelector("h1").remove();
@@ -132,10 +132,18 @@ function buildHeader() {
   fullHeaderCont.prepend(headerLogoCont);
 }
 
+/* Moves the header nav to be within the stylised header */
+function moveHeaderNav () {
+  const headerCont = document.querySelector(".confheader");
+  const headerNav = document.querySelector(".header");
+  headerCont.prepend(headerNav);
+}
+
 /* --------- Setup on window load ---------- */
 window.addEventListener("load", function() {
   addMetaTag();
-  buildHeader();
+  buildHeaderStrip();
+  moveHeaderNav();
   setupSideNavigations(".conf_leftMenu");
 });
 
