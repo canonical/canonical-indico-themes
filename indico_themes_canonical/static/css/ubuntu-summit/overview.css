@@ -163,10 +163,6 @@
 }
 
 @media screen and (max-width: 1250px) {
-  #confSectionsBox {
-    width: 100% !important;
-  }
-
   .confBodyBox {
     margin-left: 0 !important;
   }

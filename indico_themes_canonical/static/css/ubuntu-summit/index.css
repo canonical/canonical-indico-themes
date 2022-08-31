@@ -251,3 +251,10 @@ td {
 .conferenceDetails .description {
   margin: 0;
 }
+
+/* --------- Responsive --------- */
+@media screen and (max-width: 1460px) {
+  #confSectionsBox {
+    width: 100%;
+  }
+}
