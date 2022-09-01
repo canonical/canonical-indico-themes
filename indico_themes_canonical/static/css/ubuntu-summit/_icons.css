@@ -1,34 +1,34 @@
 /* Styl for calander and clock icon */
 .generic-data .header-data::before {
-  color: #AEA79F;
+  color: var(--brand-warm-grey);
 }
 
 /* Style for the ticket icon */
 .icon-ticket::before {
-  color: #AEA79F;
+  color: var(--brand-warm-grey);
 }
 
 /* Style for location icon */
 .icon-location::before {
-  color: #AEA79F;
+  color: var(--brand-warm-grey);
 }
 
 /* Style for speaker icon */
 .speaker-list .icon-user::before {
-  color: #AEA79F;
+  color: var(--brand-warm-grey);
 }
 
 /* Style for paperclip icon */
 .icon-attachment::before {
-  color: #AEA79F;
+  color: var(--brand-warm-grey);
 }
 
 /* Style for Date/Time icon */
 .icon-time::before {
-  color: #AEA79F;
+  color: var(--brand-warm-grey);
 }
 
 /* Style for chairperson icon */
 .icon-user-chairperson::before {
-  color: #AEA79F;
+  color: var(--brand-warm-grey);
 }

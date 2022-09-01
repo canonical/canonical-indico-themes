@@ -22,6 +22,7 @@
 @import "_forms.css";
 @import "_notifications.css";
 @import "_icons.css";
+@import "call-for-abstracts.css";
 @import "contribution-list.css";
 @import "header.css";
 @import "overview.css";
@@ -29,7 +30,6 @@
 @import "scientific-program.css";
 @import "side-navigation.css";
 @import "surveys.css";
-@import "call-for-proposals.css";
 
 /* 
 TEMP STYLES
@@ -44,6 +44,19 @@ div.footer {
 :root {
   --full-width: 1242px;
   --full-vertical-padding: 20px;
+}
+
+/* Custom properties */
+:root {
+  --full-width: 1242px;
+  --full-vertical-padding: 20px;
+  --brand-black: #111;
+  --brand-blue: #24598F;
+  --brand-white: #fff;
+  --brand-warm-grey: #AEA79F;
+  --brand-off-white: #f2f2f2;
+  --button-green: #0e8420;
+  --button-green_hover: #0c6d1a;
 }
 
 /* Base styling */
@@ -70,16 +83,23 @@ legend,
 li,
 input,
 .text > .title-with-actions > h2,
-.text > .subtitle-container > h3 {
-  color: #111 !important;
+.text > .subtitle-container > h3,
+.ui.button {
+  color: var(--brand-black) !important;
   font-family: Ubuntu, sans-serif !important;
 }
 
-a {
+.ui {
+  font-family: Ubuntu, sans-serif !important;
+}
+
+a,
+.ui-widget-content a {
   color: #06c;
 }
 
-a:hover {
+a:hover,
+.ui-widget-content a:hover {
   color: #06c;
   text-decoration: underline;
 }
@@ -105,14 +125,14 @@ h5 {
 }
 
 h4 {
-  font-size: 1.306122449rem;
+  font-size: 1.306rem;
   line-height: 2rem;
   margin-bottom: 0.95rem;
   padding-top: 0.051rem;
 }
 
 h3 {
-  font-size: 1.7059558517rem;
+  font-size: 1.706rem;
   font-weight: 100;
   line-height: 2.5rem;
   margin-bottom: 0.9rem;
@@ -121,18 +141,18 @@ h3 {
 
 h2 {
   font-weight: 100;
-  font-size: 2.2281872349rem;
+  font-size: 2.228rem;
   line-height: 3rem;
   margin-bottom: 0.8rem;
   padding-top: 0.201rem;
 }
 
 h1 {
-  font-size: 2.228rem;
+  font-size: 2.910rem;
   font-weight: 100;
-  line-height: 3rem;
-  margin: 0 0 0.835rem;
-  padding: 0.166rem 0 0;
+  line-height: 3.5rem;
+  margin: 0 0 0.8rem;
+  padding: 0.201rem 0 0;
 }
 
 strong {
@@ -140,7 +160,7 @@ strong {
 }
 
 td {
-  color: #111;
+  color: var(--brand-black);
 }
 
 /* ---------- Content wrapper used on every page ---------- */

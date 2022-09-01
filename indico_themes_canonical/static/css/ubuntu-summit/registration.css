@@ -32,12 +32,12 @@
 }
 
 .page-content > .action-box.accept > .section > .text .label {
-  color: #111;
+  color: var(--brand-black);
   font-weight: 300;
 }
 
 #registration-summary .i-box-header .i-box-metadata span {
-  color: #111;
+  color: var(--brand-black);
 }
 
 #registration-summary .i-box-header .i-box-metadata .label {
@@ -58,7 +58,7 @@ i.icon.icon-phone {
   width: 35px;
 }
 
-i.icon:before {
+i.icon.icon-phone:before {
   background: url("https://assets.ubuntu.com/v1/f22f6ded-get-in-touch_chat.svg") !important;
 }
 
@@ -72,7 +72,7 @@ i.icon:before {
 }
 
 .regform-section .i-box-header {
-  background: #fff;
+  background: var(--brand-white);
 }
 
 .regform-section .i-box-header .i-box-title {
@@ -102,7 +102,7 @@ i.icon:before {
 }
 
 .regform-done .i-box-header {
-  background-color: #fff;
+  background-color: var(--brand-white);
 }
 
 .regform-done .i-box-header .i-box-title {
@@ -113,7 +113,7 @@ i.icon:before {
 .regform-done .regform-done-caption,
 .regform-done .regform-done-data {
   border: none;
-  color: #111;
+  color: var(--brand-black);
   font-weight: 300;
   padding: 0.5rem 0.75rem 0.5rem 0;
   text-align: left;

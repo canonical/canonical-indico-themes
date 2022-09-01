@@ -2,12 +2,12 @@
 
 /* Style for tehe filter/search bar */
 #counter #filtering-state {
-  color: #111;
+  color: var(--brand-black);
   font-weight: 400;
 }
 
 .group .icon-search {
-  color: #111;
+  color: var(--brand-black);
 }
 
 /* Style for indervidual contribution cards */

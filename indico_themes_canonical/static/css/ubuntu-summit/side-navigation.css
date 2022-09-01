@@ -26,7 +26,7 @@
 }
 
 #outer li:is(.selected) a {
-  border-left: 3px solid #111;
+  border-left: 3px solid var(--brand-black);
 }
 
 .menuConfSelected {
@@ -36,7 +36,7 @@
 .menuConfTitle.selected > a,
 .menuConfMiddleCell.selected > a {
   background: #e6e6e6;
-  color: #111;
+  color: var(--brand-black);
 }
 
 #outer .menuConfMiddleCell > a {
@@ -47,11 +47,11 @@
 
 .conf_leftMenu #outer .no-link {
   font-weight: 400;
-  color: #111;
+  color: var(--brand-black);
 }
 
 .conf_leftMenu #outer .no-link:hover {
-  color: #111;
+  color: var(--brand-black);
 }
 
 /*  Menu item when doing mouseover */
@@ -60,8 +60,8 @@
 }
 
 #outer li:not(.selected) a:not(.no-link):hover {
-  background: #f2f2f2;
-  color: #111;
+  background: var(--brand-off-white);
+  color: var(--brand-black);
 }
 
 /* Navigation toggle button */
@@ -70,10 +70,10 @@
 }
 
 .navigationToggleBtn {
-  background-color: #fff;
+  background-color: var(--brand-white);
   border: 1px solid rgba(0, 0, 0, 0.56);
   border-radius: 0.125rem;
-  color: #111;
+  color: var(--brand-black);
   display: none;
   line-height: 1.5rem;
   padding: calc(0.4rem - 1px) 1rem;
@@ -81,8 +81,8 @@
 }
 
 .navigationToggleBtn:hover {
-  background-color: #f2f2f2;
-  color: #111;
+  background-color: var(--brand-off-white);
+  color: var(--brand-black);
   text-decoration: none;
 }
 
@@ -127,7 +127,7 @@
 
 @media screen and (max-width: 1250px) {
   .conf_leftMenu {
-    background: #fff;
+    background: var(--brand-white);
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
       0 0 3px 0 rgb(0 0 0 / 20%);
     display: none;
