@@ -258,3 +258,10 @@ td {
     width: 100%;
   }
 }
+
+/* Handles the footer not working on small screens. Will be removed once the custom footer is implemented */
+@media screen and (max-width: 1260px) {
+  .footer .f-self-no-shrink {
+    display: none;
+  }
+}

@@ -36,7 +36,6 @@
 
 .i-button:not(.subtle).highlight,
 .i-button.highlight:not(.label):not(.borderless):not(.text-color),
-.ui.primary.button,
 .i-button.highlight.text-color.outline,
 .i-button:not(.subtle),
 .i-button:not(.label),
