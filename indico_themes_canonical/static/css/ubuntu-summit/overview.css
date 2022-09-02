@@ -1,16 +1,105 @@
 /* ---------- Styles for the main page content ---------- */
 
+/* ---------- Style for the Infogrid container date/location/chairs etc ---------- */
+
+.conferenceDetails .infogrid {
+  margin-bottom: 2rem;
+}
 /* Date and time info */
-.infoline .label {
-  font-weight: 400;
+.infoline {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.infoline,
+.infoline time {
+  font-size: 1rem;
 }
 
-/* Registration call-out box */
-.action-box.highlight {
-  background: var(--brand-white);
-  border: none;
-  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
-    0 0 3px 0 rgb(0 0 0 / 20%);
+.infoline span.icon-time {
+  display: none;
+}
+
+.infoline.date time {
+  margin-left: 7rem;
+}
+
+.infoline.date div.text span.label {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 2px;
+  width: 0;
+  text-transform: uppercase;
+}
+
+.infoline.date div.text div {
+  margin-bottom: 0.5rem;
+}
+
+.infoline.date div.text .timezone {
+  font-size: 1rem;
+  margin-left: 131px;
+}
+
+/* Location info */
+.infoline.location span {
+  display: none;
+}
+
+.infoline.location:before {
+  content: "Location";
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 2px;
+  width: 0;
+  text-transform: uppercase;
+}
+
+.infoline.location div.text {
+  margin-left: 7rem;
+}
+
+.infoline.location div.text div {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Chairperson info */
+.infoline.chairs span {
+  display: none;
+}
+
+.infoline.chairs:before {
+  content: "Chairs";
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 2px;
+  width: 0;
+  text-transform: uppercase;
+}
+
+.infoline.chairs .chair_list {
+  margin-left: 7rem;
+}
+
+/* Attach documents */
+.infoline.material-list span.icon-attachment {
+  display: none;
+}
+
+.infoline.material-list:before {
+  content: "Resources";
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 0;
+  text-transform: uppercase;
+}
+
+.infoline.material-list .attachments-box {
+  margin-left: 7rem;
 }
 
 /* Attach materials button */
@@ -24,6 +113,31 @@
   color: #333333;
 }
 
+/* CTA's at bottom of page */
+.conferenceDetails .action-box.highlight {
+  box-shadow: none;
+  border-top: 1px solid var(--brand-warm-grey);
+  margin-bottom: 2rem;
+  padding: 1rem 0 0 0;
+}
+
+.conferenceDetails .action-box.highlight .section {
+  display: block;
+}
+
+.conferenceDetails .action-box.highlight .label {
+  display: inline-block;
+  font-size: 1.706rem;
+  font-weight: 100;
+  line-height: 2rem;
+  margin-bottom: 0.95rem;
+  padding-top: 0.051rem;
+}
+
+.conferenceDetails .action-box.highlight .toolbar {
+  padding: 0;
+  margin-top: 1rem;
+}
 
 /* ---------- Media queries ---------- */
 
@@ -40,9 +154,9 @@
   }
 
   .action-box.highlight .section .toolbar {
-    width: 100%;
-    padding: 0;
     margin-top: 0.5rem;
+    padding: 0;
+    width: 100%;
   }
 }
 

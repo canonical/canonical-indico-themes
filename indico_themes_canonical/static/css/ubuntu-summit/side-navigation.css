@@ -46,8 +46,8 @@
 }
 
 .conf_leftMenu #outer .no-link {
-  font-weight: 400;
   color: var(--brand-black);
+  font-weight: 400;
 }
 
 .conf_leftMenu #outer .no-link:hover {
@@ -113,11 +113,8 @@
   }
 
   #confSectionsBox > .conf_leftMenu {
-    left: 20px;
-    position: absolute;
-    right: 20px;
-    width: auto;
-    top: 114px;
+    position: static;
+    width: 100%;
   }
 
   .navigationToggleCont {
