@@ -1,9 +1,12 @@
 /* Style for the highlight buttons */
 
-/* .i-button.highlight,
-.i-button.highlight:not(.label):not(.borderless):not(.text-color),
+/* What is this/ */
+.i-button.next::after {
+  content: "";
+}
+
 .ui.primary.button,
-.i-button.highlight.text-color.outline {
+.i-button.highlight:not(.label):not(.borderless):not(.text-color)[type="submit"] {
   background: var(--button-green);
   border: 1px solid var(--button-green);
   border-radius: 0.125rem;
@@ -13,21 +16,17 @@
   padding: calc(0.4rem - 1px) 1rem;
 }
 
-.i-button.highlight:not(.label):not(.borderless):not(.text-color):hover,
 .ui.primary.button:hover,
-.i-button.highlight.text-color.outline:hover {
+.i-button.highlight:not(.label):not(.borderless):not(.text-color)[type="submit"]:hover {
   background: var(--button-green_hover);
   border: 1px solid var(--button-green_hover);
   color: var(--brand-white);
   text-decoration: none;
-} */
-
-.i-button.next::after {
-  content: "";
 }
 
-.i-button.highlight.disabled,
-.i-button.highlight:disabled {
+.ui.primary.button.disabled,
+.i-button.highlight:not(.label):not(.borderless):not(.text-color)[type="submit"].disabled,
+.i-button.highlight:not(.label):not(.borderless):not(.text-color)[type="submit"][disabled] {
   background: var(--button-green_hover) !important;
   border-color: var(--button-green_hover) !important;
   opacity: 0.33;
@@ -35,12 +34,12 @@
 
 /* Style for standard buttons */
 
-.i-button.highlight,
+.i-button:not(.subtle).highlight,
 .i-button.highlight:not(.label):not(.borderless):not(.text-color),
-.ui.primary.button,
 .i-button.highlight.text-color.outline,
 .i-button:not(.subtle),
 .i-button:not(.label),
+.i-button.highlight:not(.label):not(.borderless):not(.text-color),
 .ui.modal .actions .ui.button:not(.highlighted):not(.primary) {
   background: var(--brand-white);
   border: 1px solid rgba(0, 0, 0, 0.56);
@@ -51,11 +50,11 @@
   padding: calc(0.4rem - 1px) 1rem;
 }
 
-.i-button.highlight:not(.label):not(.borderless):not(.text-color):hover,
-.ui.primary.button:hover,
+.i-button:hover,
 .i-button.highlight.text-color.outline:hover,
-.i-button:not(.subtle):hover,
+.i-button:not(.subtle):not(.subtle):hover,
 .i-button:not(.label):hover,
+.i-button.highlight:not(.label):not(.borderless):not(.text-color):hover,
 .ui.modal .actions .ui.button:not(.highlighted):not(.primary):hover {
   background: var(--brand-white);
   background-color: var(--brand-off-white);
@@ -63,6 +62,18 @@
   box-shadow: none;
   color: var(--brand-black);
   text-decoration: none;
+}
+
+.i-button.disabled {
+  background: var(--brand-white) !important;
+  border: 1px solid rgba(0, 0, 0, 0.56) !important;
+  border-radius: 0.125rem;
+  color: var(--brand-black) !important;
+  cursor: not-allowed;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: calc(0.4rem - 1px) 1rem;
+  opacity: .33;
 }
 
 .ui-button {

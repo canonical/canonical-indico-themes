@@ -1,13 +1,5 @@
 /* ---------- Style for notifications ---------- */
 
-/* Style for cta boxes */
-.action-box.highlight {
-  background: var(--brand-white);
-  border: none;
-  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 15%), 0 2px 2px -1px rgb(0 0 0 / 15%),
-    0 0 3px 0 rgb(0 0 0 / 20%);
-}
-
 /* Styles for dafualt tooltip */
 .qtip-default,
 .qtip-default.informational {
@@ -53,7 +45,7 @@
 .action-box.accept {
   background-color: var(--brand-white);
   background-image: url("../../files/information-icon.svg") !important;
-  background-position: 1rem 1.15rem;
+  background-position: 1rem 1.2rem;
   background-repeat: no-repeat;
   background-size: 1rem;
   border: 1px solid #d9d9d9;
@@ -75,4 +67,32 @@
   top: -1px;
   width: 0.1875rem;
   z-index: 1;
+}
+
+/* Style for CTA's */
+.action-box.highlight {
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-top: 1px solid var(--brand-warm-grey);
+  margin-bottom: 2rem;
+  padding: 1rem 0 0 0;
+}
+
+.action-box.highlight .section {
+  display: block;
+}
+
+.action-box.highlight .section .label {
+  display: inline-block;
+  font-size: 1.706rem;
+  font-weight: 100;
+  line-height: 2rem;
+  margin-bottom: 0.95rem;
+  padding-top: 0.051rem;
+}
+
+.action-box.highlight .toolbar {
+  padding: 0;
+  margin-top: 1rem;
 }

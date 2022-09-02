@@ -110,6 +110,10 @@ i.icon.icon-phone:before {
   font-weight: 300;
 }
 
+.regform-done .regform-done-caption {
+  width: 140px;
+}
+
 .regform-done .regform-done-caption,
 .regform-done .regform-done-data {
   border: none;

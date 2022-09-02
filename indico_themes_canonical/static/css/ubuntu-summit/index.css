@@ -72,6 +72,49 @@ TEMP STYLES
   --button-green_hover: #0c6d1a;
 }
 
+/* Custom properties */
+:root {
+  --full-width: 1242px;
+  --full-vertical-padding: 20px;
+  --brand-black: #111;
+  --brand-blue: #24598F;
+  --brand-white: #fff;
+  --brand-warm-grey: #AEA79F;
+  --brand-off-white: #f2f2f2;
+  --button-green: #0e8420;
+  --button-green_hover: #0c6d1a;
+}
+
+/* Custom properties */
+:root {
+  --full-width: 1442px;
+  --full-vertical-padding: 20px;
+  --global-margin-left: 350px;
+  --brand-black: #111;
+  --brand-blue: #24598f;
+  --border-grey: rgba(0, 0, 0, 0.56);
+  --brand-white: #fff;
+  --brand-warm-grey: #aea79f;
+  --brand-off-white: #f2f2f2;
+  --button-green: #0e8420;
+  --button-green_hover: #0c6d1a;
+}
+
+/* Custom properties */
+:root {
+  --full-width: 1442px;
+  --full-vertical-padding: 20px;
+  --global-margin-left: 350px;
+  --brand-black: #111;
+  --brand-blue: #24598f;
+  --border-grey: rgba(0, 0, 0, 0.56);
+  --brand-white: #fff;
+  --brand-warm-grey: #aea79f;
+  --brand-off-white: #f2f2f2;
+  --button-green: #0e8420;
+  --button-green_hover: #0c6d1a;
+}
+
 /* Base styling */
 body,
 html {
@@ -207,4 +250,18 @@ td {
 
 .conferenceDetails .description {
   margin: 0;
+}
+
+/* --------- Responsive --------- */
+@media screen and (max-width: 1460px) {
+  #confSectionsBox {
+    width: 100%;
+  }
+}
+
+/* Handles the footer not working on small screens. Will be removed once the custom footer is implemented */
+@media screen and (max-width: 1260px) {
+  .footer .f-self-no-shrink {
+    display: none;
+  }
 }

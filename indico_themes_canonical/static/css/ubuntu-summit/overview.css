@@ -139,6 +139,18 @@
   margin-top: 1rem;
 }
 
+/* Attach materials button */
+.i-button.text-color:not(.color-on-hover) {
+  color: var(--brand-warm-grey);
+}
+
+.i-button.text-color:not(.color-on-hover):hover {
+  background: none;
+  border: none;
+  color: #333333;
+}
+
+
 /* ---------- Media queries ---------- */
 
 @media screen and (max-width: 550px) {
@@ -148,23 +160,9 @@
   .infoline.material {
     width: 100%;
   }
-
-  .action-box.highlight .section {
-    flex-flow: row wrap;
-  }
-
-  .action-box.highlight .section .toolbar {
-    margin-top: 0.5rem;
-    padding: 0;
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 1250px) {
-  #confSectionsBox {
-    width: 100% !important;
-  }
-
   .confBodyBox {
     margin-left: 0 !important;
   }

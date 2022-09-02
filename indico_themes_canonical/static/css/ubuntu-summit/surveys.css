@@ -1,12 +1,26 @@
 /* ---------- Style for the Survery page ---------- */
+
+form#survey-questionnaire fieldset {
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+#survey-questionnaire .form-group+.form-group {
+  margin-top: 2rem;
+}
+
 .conference-page header .page-description {
   font-size: 1rem;
   font-weight: 300;
 }
 
+.i-form .form-group .form-label {
+  min-height: 2rem;
+}
+
 .form-label > label {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0 0 1.1rem;
   padding: 0.401rem 0 0;
 }
@@ -16,11 +30,24 @@
   font-weight: 300;
   line-height: 2rem;
   margin-bottom: 0.95rem;
-  padding-top: 0.051rem;
+  padding-bottom: 0;
 }
 
 .i-form.vertical .form-group-footer {
   margin-top: 2rem;
+}
+
+.fieldset-content p {
+  margin-bottom: 0;
+}
+
+.i-form.vertical .form-group-footer {
+  margin-left: 1rem;
+}
+
+/* Hides empty <p> elements that sometimes appear with descriptions */
+.fieldset-content p:empty {
+  display: none;
 }
 
 /* Fixes content spilling out the edge on smaller screens */
@@ -39,5 +66,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+
+  .i-form.vertical .form-group-footer {
+    margin-left: 0;
+  }
+
+  form#survey-questionnaire fieldset {
+    margin-left: 0;
   }
 }
