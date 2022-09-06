@@ -44,22 +44,50 @@
   font-weight: 400;
 }
 
+/* Style deadline info */
+i.icon.icon-time {
+ display: none;
+}
+
+.infogrid.condensed .infoline .label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  margin-top: 2px;
+}
+
+.infogrid.condensed .infoline.date {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.infogrid.condensed .infoline.date .text div:first-child .label {
+  font-size: 1.306rem;
+  font-weight: 300;
+  position: static;
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+
+.infogrid.condensed .infoline.date .text div:nth-child(2) .datetime {
+  margin-left: 7rem;
+}
+
+.infogrid.condensed .infoline.date .datetime {
+  color: var(--brand-black);
+  font-size: 1rem;
+}
+
+.infogrid.condensed .infoline:not(.date) .text div:nth-child(2) {
+  display: inline;
+  margin-left: 7rem;
+}
+
 /* Style contact-us info icon */
 i.icon.icon-phone {
-  margin-right: 15px;
-  padding-left: 20px;
-}
-
-.icon-phone:before {
-  content: "";
-  height: 35px;
-  margin-left: -20px;
-  position: absolute;
-  width: 35px;
-}
-
-i.icon.icon-phone:before {
-  background: url("https://assets.ubuntu.com/v1/f22f6ded-get-in-touch_chat.svg") !important;
+  display: none;
 }
 
 .infogrid.condensed .infoline {

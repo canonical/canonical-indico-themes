@@ -1,6 +1,5 @@
 /* Style for the highlight buttons */
 
-/* What is this/ */
 .i-button.next::after {
   content: "";
 }
@@ -22,7 +21,7 @@
   border: 1px solid var(--button-green_hover);
   color: var(--brand-white);
   text-decoration: none;
-} */
+}
 
 .ui.primary.button.disabled,
 .i-button.highlight:not(.label):not(.borderless):not(.text-color)[type="submit"].disabled,
