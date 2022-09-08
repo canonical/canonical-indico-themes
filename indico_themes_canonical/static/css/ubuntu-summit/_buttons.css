@@ -1,6 +1,5 @@
 /* Style for the highlight buttons */
 
-/* What is this/ */
 .i-button.next::after {
   content: "";
 }

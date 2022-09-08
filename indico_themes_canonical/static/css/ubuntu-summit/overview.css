@@ -6,24 +6,25 @@
   margin-bottom: 2rem;
 }
 /* Date and time info */
-.infoline {
+.conferenceDetails .infoline {
   margin-top: 1.5rem;
   width: 100%;
 }
-.infoline,
-.infoline time {
+
+.conferenceDetails .infoline,
+.conferenceDetails .infoline time {
   font-size: 1rem;
 }
 
-.infoline span.icon-time {
+.conferenceDetails .infoline span.icon-time {
   display: none;
 }
 
-.infoline.date time {
+.conferenceDetails .infoline.date time {
   margin-left: 7rem;
 }
 
-.infoline.date div.text span.label {
+.conferenceDetails .infoline.date div.text span.label {
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 400;
@@ -32,21 +33,21 @@
   text-transform: uppercase;
 }
 
-.infoline.date div.text div {
+.conferenceDetails .infoline.date div.text div {
   margin-bottom: 0.5rem;
 }
 
-.infoline.date div.text .timezone {
+.conferenceDetails .infoline.date div.text .timezone {
   font-size: 1rem;
-  margin-left: 131px;
+  margin-left: 117px;
 }
 
 /* Location info */
-.infoline.location span {
+.conferenceDetails .infoline.location span {
   display: none;
 }
 
-.infoline.location:before {
+.conferenceDetails .infoline.location:before {
   content: "Location";
   font-family: Ubuntu, sans-serif;
   font-size: 0.9rem;
@@ -56,21 +57,21 @@
   text-transform: uppercase;
 }
 
-.infoline.location div.text {
+.conferenceDetails .infoline.location div.text {
   margin-left: 7rem;
 }
 
-.infoline.location div.text div {
+.conferenceDetails .infoline.location div.text div {
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
 /* Chairperson info */
-.infoline.chairs span {
+.conferenceDetails .infoline.chairs span {
   display: none;
 }
 
-.infoline.chairs:before {
+.conferenceDetails .infoline.chairs:before {
   content: "Chairs";
   font-family: Ubuntu, sans-serif;
   font-size: 0.9rem;
@@ -80,16 +81,16 @@
   text-transform: uppercase;
 }
 
-.infoline.chairs .chair_list {
+.conferenceDetails .infoline.chairs .chair_list {
   margin-left: 7rem;
 }
 
 /* Attach documents */
-.infoline.material-list span.icon-attachment {
+.conferenceDetails .infoline.material-list span.icon-attachment {
   display: none;
 }
 
-.infoline.material-list:before {
+.conferenceDetails .infoline.material-list:before {
   content: "Resources";
   font-family: Ubuntu, sans-serif;
   font-size: 0.9rem;
@@ -98,7 +99,7 @@
   text-transform: uppercase;
 }
 
-.infoline.material-list .attachments-box {
+.conferenceDetails .infoline.material-list .attachments-box {
   margin-left: 7rem;
 }
 

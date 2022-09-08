@@ -1,0 +1,57 @@
+/* ---------- Style for top navigation ---------- */
+
+/* Left hand side navigation options */
+div.page-header-dark {
+  background: transparent;
+}
+
+.event-page-header .button-bar .i-button:not(.label) {
+  color: var(--brand-white);
+  font-size: 0.8rem;
+}
+
+.event-page-header .button-bar .i-button:not(.label):hover {
+  background: none;
+  color: var(--brand-warm-grey);
+
+  font-size: 0.8rem;
+}
+
+.event-page-header .button-bar span.separator {
+  display: none;
+}
+
+/* Right hand side account options */
+#session-bar .group a {
+  background: transparent;
+  border: none;
+  color: var(--brand-white);
+  font-size: 0.8rem;
+}
+
+#session-bar .group a:hover {
+  color: var(--brand-warm-grey);
+}
+
+#session-bar .i-button[class*='icon-']:not(:empty)::before {
+  content: "";
+}
+
+/* --------- Responsive --------- */
+@media screen and (max-width: 660px) {
+  .event-page-header .main-action-bar.flexrow {
+    flex-flow: wrap-reverse;
+  }
+
+  .event-page-header .button-bar {
+    flex-basis: 100%;
+  }
+
+  .event-page-header .main-action-bar {
+  height: 70px;
+  }
+
+  #protection-details-link {
+    padding-left: 0 !important;
+  }
+}

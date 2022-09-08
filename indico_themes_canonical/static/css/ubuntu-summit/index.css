@@ -30,6 +30,7 @@
 @import "scientific-program.css";
 @import "side-navigation.css";
 @import "surveys.css";
+@import "top-navigation.css";
 
 /* 
 TEMP STYLES
@@ -115,10 +116,25 @@ TEMP STYLES
   --button-green_hover: #0c6d1a;
 }
 
+/* Custom properties */
+:root {
+  --full-width: 1442px;
+  --full-vertical-padding: 20px;
+  --global-margin-left: 350px;
+  --brand-black: #111;
+  --brand-blue: #24598f;
+  --border-grey: rgba(0, 0, 0, 0.56);
+  --brand-white: #fff;
+  --brand-warm-grey: #aea79f;
+  --brand-off-white: #f2f2f2;
+  --button-green: #0e8420;
+  --button-green_hover: #0c6d1a;
+}
+
 /* Base styling */
 body,
 html {
-  font-size: 18px;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: 300;
