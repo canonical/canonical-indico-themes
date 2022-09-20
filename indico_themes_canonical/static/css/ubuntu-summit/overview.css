@@ -21,7 +21,7 @@
 }
 
 .conferenceDetails .infoline.date time {
-  margin-left: 7rem;
+  margin-left: 8rem;
 }
 
 .conferenceDetails .infoline.date div.text span.label {
@@ -39,7 +39,7 @@
 
 .conferenceDetails .infoline.date div.text .timezone {
   font-size: 1rem;
-  margin-left: 117px;
+  margin-left: 132px;
 }
 
 /* Location info */
@@ -58,7 +58,7 @@
 }
 
 .conferenceDetails .infoline.location div.text {
-  margin-left: 7rem;
+  margin-left: 8rem;
 }
 
 .conferenceDetails .infoline.location div.text div {
@@ -82,7 +82,7 @@
 }
 
 .conferenceDetails .infoline.chairs .chair_list {
-  margin-left: 7rem;
+  margin-left: 8rem;
 }
 
 /* Attach documents */
@@ -100,7 +100,7 @@
 }
 
 .conferenceDetails .infoline.material-list .attachments-box {
-  margin-left: 7rem;
+  margin-left: 8rem;
 }
 
 /* Attach materials button */

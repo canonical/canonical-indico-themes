@@ -9,3 +9,10 @@ ul.sub-tracks li .track-title .track-code {
   font-size: 1rem;
   font-weight: 300;
 }
+
+/* Removes the quotation styling found in the main description */
+.quotation.tracks {
+  border: none;
+  padding-left: 0;
+  margin-left: 0;
+}
