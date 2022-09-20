@@ -4,30 +4,12 @@
 Wraps around the upper part of the conference header.
 */
 .confheader {
-  background-blend-mode: multiply, multiply, normal;
-  background-image: linear-gradient(
-      150deg,
-      rgba(228, 228, 228, 0.54) 0%,
-      rgba(228, 228, 228, 0.54) 54.9%,
-      rgba(228, 228, 228, 0) 55%,
-      rgba(228, 228, 228, 0) 100%
-    ),
-    linear-gradient(
-      to bottom left,
-      rgba(216, 216, 216, 0.54) 0%,
-      rgba(216, 216, 216, 0.54) 49.9%,
-      rgba(216, 216, 216, 0) 50%,
-      rgba(216, 216, 216, 0) 100%
-    ),
-    linear-gradient(-89deg, #e95420 0%, #772953 42%, #2c001e 94%);
-  background-position: 0% 0%, top right, right 0 bottom 4rem, right bottom,
-    0% 0%;
-  background-position: bottom left, bottom 0 right, 0% 0%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%, 60% 100%, auto;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 17%, rgba(233, 84, 32, 1) 98%);
   color: #fff;
   overflow: hidden;
   position: relative;
+  height: 399px;
 }
 
 /*
@@ -38,6 +20,7 @@ Wraps around the title box
   display: flex;
   margin: auto;
   padding: 80px 20px;
+  position: relative;
   text-align: left;
   width: var(--full-width);
 }
@@ -46,20 +29,19 @@ Wraps around the title box
 The style for the title text.
 */
 .confTitle {
+  border-left: 4px solid var(--brand-orange);
   display: inline-block;
   margin-left: var(--global-margin-left);
   width: 100%;
-}
-
-.headerLogoCont {
-  position: absolute;
-  top: 134px;
+  padding-left: 1rem;
 }
 
 .headerLogo {
   display: block;
-  margin-left: 0;
-  height: 62px;
+  height: 1101px;
+  position: absolute;
+  top: -341px;
+  left: -830px;
 }
 
 .confTitleBox > .confTitle > h1 {
@@ -75,22 +57,48 @@ The style for the title text.
   line-height: 1.5rem;
 }
 
+/* Overides large margins below custom registration fields */
+.ui.form.i-box-content .field:last-child {
+  margin-bottom: 0;
+}
+
+/* Style for the announcement */
+.simpleTextAnnouncement {
+  background: none;
+  border: none;
+  color: var(--brand-white) !important;
+}
+
 /* ---------- Responsive ---------- */
 @media screen and (max-width: 1250px) {
   .confTitleBox {
     width: 100%;
     display: block;
+    padding: 40px 20px;
   }
 
   .confTitle {
     width: 100%;
     margin-left: 0;
   }
+  
+  .confheader {
+    height: 316px;
+  }
 
-  .headerLogoCont {
-    width: 100%;
-    display: block;
-    position: static;
-    margin-bottom: 1rem;
+  .headerLogo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1620px) {
+  .headerLogo {
+    left: -796px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .confheader {
+    height: 330px;
   }
 }

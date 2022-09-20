@@ -108,16 +108,16 @@ function addMetaTag() {
 function buildHeaderStrip() {
   // Remove unused title
   const headerTitleCont = document.querySelector(".confTitle");
-  const unusedTitle = headerTitleCont.querySelector("h1").remove();
+  headerTitleCont.querySelector("h1").remove();
 
   // Append new header elements
-  const fullHeaderCont = document.querySelector(".confTitleBox");
+  const headerContentCont = document.querySelector(".confTitleBox");
 
   const headerLogoCont = document.createElement("div");
   headerLogoCont.classList.add("headerLogoCont");
   const headerLogo = document.createElement("img");
   headerLogo.classList.add("headerLogo");
-  headerLogo.src = "https://assets.ubuntu.com/v1/809d5b1a-czech-flag.svg"
+  headerLogo.src = "https://assets.ubuntu.com/v1/88af8658-ubuntu+summit-illustration.svg"
   headerLogoCont.append(headerLogo);
 
   const headerTitle = document.createElement("h1");
@@ -129,7 +129,7 @@ function buildHeaderStrip() {
   
   headerTitleCont.append(headerTitle);
   headerTitleCont.append(headerSubtitle);
-  fullHeaderCont.prepend(headerLogoCont);
+  headerContentCont.prepend(headerLogo);
 }
 
 /* Moves the header nav to be within the stylised header */

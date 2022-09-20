@@ -72,7 +72,7 @@ i.icon.icon-time {
 }
 
 .infogrid.condensed .infoline.date .text div:nth-child(2) .datetime {
-  margin-left: 7rem;
+  margin-left: 13rem;
 }
 
 .infogrid.condensed .infoline.date .datetime {
@@ -82,7 +82,7 @@ i.icon.icon-time {
 
 .infogrid.condensed .infoline:not(.date) .text div:nth-child(2) {
   display: inline;
-  margin-left: 7rem;
+  margin-left: 13rem;
 }
 
 /* Style contact-us info icon */
