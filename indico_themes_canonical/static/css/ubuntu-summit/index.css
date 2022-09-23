@@ -166,6 +166,14 @@ td {
   color: var(--brand-black);
 }
 
+ul:not(#outer) {
+  max-width: 40rem !important;
+}
+
+ul:not(#outer) span {
+  font-size: 1rem;
+}
+
 /* ---------- Content wrapper used on every page ---------- */
 
 /* The wrapper of the whole conference page. */

@@ -39,6 +39,7 @@ The style for the title text.
 .headerLogo {
   display: block;
   height: 1101px;
+  pointer-events: none;
   position: absolute;
   top: -341px;
   left: -830px;
