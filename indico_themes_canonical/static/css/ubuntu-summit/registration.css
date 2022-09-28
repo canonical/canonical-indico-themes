@@ -26,12 +26,15 @@
 }
 
 .info-message-box .icon,
-.action-box .icon,
-.action-box.accept .toolbar {
+.action-box .icon {
   display: none;
 }
+.action-box .toolbar .i-button {
+  font-weight: normal;
+}
 
-.page-content > .action-box.accept > .section > .text .label {
+.page-content > .action-box.accept > .section > .text .label,
+.page-content > .action-box.accept > .section > .toolbar .i-button {
   color: var(--brand-black);
   font-weight: 300;
 }
