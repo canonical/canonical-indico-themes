@@ -32,6 +32,11 @@
   font-weight: 100;
 }
 
+.contrib-type,
+.contrib-track {
+  color: var(--brand-white) !important;
+}
+
 /* --------- Style for My Constributions page -------- */
 
 /* Responsive */
