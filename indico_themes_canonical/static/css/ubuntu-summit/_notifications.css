@@ -27,7 +27,12 @@
 }
 
 .qtip-content,
-.qtip-content p {
+.qtip-content p,
+.qtip-content div,
+.qtip-content h3,
+.qtip-content h4,
+.qtip-content h5,
+.qtip-content h6 {
   color: var(--brand-white) !important;
 }
 

@@ -21,11 +21,11 @@
   padding: 0.25rem 1rem 0.25rem 1.5rem;
 }
 
-#outer li:not(.selected) a {
+#outer li:not(.selected) > a {
   color: rgb(0 0 0 / 75%);
 }
 
-#outer li:is(.selected) a {
+#outer li:is(.selected) > a {
   border-left: 3px solid var(--brand-black);
 }
 
@@ -54,12 +54,17 @@
   color: var(--brand-black);
 }
 
+#outer li:not(.selected) {
+  background: var(--brand-white);
+  color: var(--brand-black);
+}
+
 /*  Menu item when doing mouseover */
-#outer li:is(.selected) a:hover {
+#outer li:is(.selected) > a:hover {
   background: #e6e6e6;
 }
 
-#outer li:not(.selected) a:not(.no-link):hover {
+#outer li:not(.selected) > a:not(.no-link):hover {
   background: var(--brand-off-white);
   color: var(--brand-black);
 }
