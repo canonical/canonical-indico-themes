@@ -41,6 +41,11 @@
   text-decoration: underline;
 }
 
+/* Style for white qtips found in the timetable */
+.qtip-default.qbubble.balloon-qtip .qtip-content .balloon * {
+  color: var(--brand-black) !important;
+}
+
 /* For pop up corner message notifications */
 .corner-message.highlight {
   background: var(--brand-white);
