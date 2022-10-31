@@ -7,6 +7,9 @@
 .icon-ticket::before {
   color: var(--brand-warm-grey);
 }
+.i-button.accept.icon-ticket:not(.label):not(.borderless):not(.text-color)::before {
+  color: var(--brand-white);
+}
 
 /* Style for location icon */
 .icon-location::before {
