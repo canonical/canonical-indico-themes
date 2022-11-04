@@ -38,6 +38,7 @@
 .i-button.highlight.text-color.outline,
 .i-button:not(.subtle),
 .i-button:not(.label),
+.toolbar .i-button:not(.label),
 .i-button.highlight:not(.label):not(.borderless):not(.text-color),
 .ui.modal .actions .ui.button:not(.highlighted):not(.primary) {
   background: var(--brand-white);
@@ -83,4 +84,12 @@
 .ui-button:hover {
   background: var(--brand-off-white) !important;
   color: var(--brand-black);
+}
+
+.item-subitems.toolbar a.i-button.js-switch-view.highlight {
+  font-weight: 500;
+}
+
+.item-subitems.toolbar a.i-button.js-switch-view.highlight:hover {
+  background: var(--brand-white);
 }
