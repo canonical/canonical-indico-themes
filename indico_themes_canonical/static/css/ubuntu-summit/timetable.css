@@ -57,3 +57,8 @@
 .qtip.palette-picker-qtip {
   background: var(--brand-white);
 }
+
+/* Timetable header */
+#timetable ul.ui-widget-header {
+  max-width: none !important;
+}
