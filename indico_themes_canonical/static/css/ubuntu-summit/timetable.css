@@ -1,0 +1,59 @@
+/* ---------- Style for timetable ---------- */
+
+/* Day selection */
+.ui-tabs-nav {
+  border-color: rgba(0, 0, 0, 0.56);
+}
+
+.ui-tabs-nav li.ui-tabs-tab {
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  border-color: rgba(0, 0, 0, 0.56);
+}
+
+.ui-tabs-nav li.ui-tabs-tab a.ui-tabs-anchor {
+  padding: 10px 16px 5px;
+  color: var(--brand-black);
+}
+
+.ui-tabs-nav li.ui-tabs-tab:not(.ui-state-active) a.ui-tabs-anchor:hover {
+  background: var(--brand-off-white) !important;
+}
+.ui-tabs-nav .ui-state-active a {
+  color: var(--brand-black) !important;
+  font-weight: 500;
+}
+
+/* Button bar (print, PDF, etc...) */
+.tabExtraButtons {
+  background-color: var(--brand-white);
+  border: 1px solid rgba(0, 0, 0, 0.56);
+  border-radius: 0.125rem;
+  box-shadow: none;
+  margin-top: 15px;
+}
+
+.tabExtraButtons .buttonContainer {
+  border-left: 1px solid rgba(0, 0, 0, 0.56);
+  padding: .125rem .5rem;
+}
+
+.tabExtraButtons .buttonContainerLeft {
+  border-left: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.tabExtraButtons .buttonContainerRight {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.tabExtraButtons .buttonContainer:hover {
+  background: var(--brand-off-white);
+}
+
+/* Colour picker qtip in session edit */
+.qtip.palette-picker-qtip {
+  background: var(--brand-white);
+}

@@ -31,7 +31,12 @@
   color: var(--brand-warm-grey);
 }
 
+.i-button.icon-time::before {
+  color: var(--brand-black);
+}
+
 /* Style for chairperson icon */
 .icon-user-chairperson::before {
   color: var(--brand-warm-grey);
 }
+
