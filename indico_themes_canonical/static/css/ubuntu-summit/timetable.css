@@ -62,3 +62,12 @@
 #timetable ul.ui-widget-header {
   max-width: none !important;
 }
+
+/* Don't fade out timetable description and leave more space */
+.balloon-qtip .description::before {
+  background: none;
+}
+
+.balloon-qtip .description {
+  max-height: 20em;
+}
