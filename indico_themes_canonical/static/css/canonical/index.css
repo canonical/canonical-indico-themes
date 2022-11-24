@@ -1,0 +1,76 @@
+@import "../_default/index.css";
+
+/* Custom properties */
+:root {
+  --brand-primary: #772953;
+}
+
+.confheader {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+      to bottom left,
+      rgba(225, 225, 225, 0.3) 0%,
+      rgba(225, 225, 225, 0.3) 49.9%,
+      rgba(225, 225, 225, 0) 50%,
+      rgba(225, 225, 225, 0) 100%
+    ),
+    linear-gradient(
+      to bottom right,
+      rgba(225, 225, 225, 0.3) 0%,
+      rgba(225, 225, 225, 0.3) 49.9%,
+      rgba(225, 225, 225, 0) 50%,
+      rgba(225, 225, 225, 0) 100%
+    ),
+    linear-gradient(
+      to top right,
+      rgba(225, 225, 225, 0.3) 0%,
+      rgba(225, 225, 225, 0.3) 49.9%,
+      rgba(225, 225, 225, 0) 50%,
+      rgba(225, 225, 225, 0) 100%
+    ),
+    linear-gradient(
+      to top left,
+      rgba(225, 225, 225, 0.3) 0%,
+      rgba(225, 225, 225, 0.3) 49.9%,
+      rgba(225, 225, 225, 0) 50%,
+      rgba(225, 225, 225, 0) 100%
+    ),
+    linear-gradient(199deg, #8b3236 -20%, #5e2750 25%, #2c001e 50%);
+  background-blend-mode: multiply, multiply, multiply, multiply, normal;
+}
+
+/* Changes the color of the "Public"/"Private" icon */
+.i-button.accept:not(.label):not(.borderless):not(.text-color):hover,
+div.session-bar
+  .i-button.protection-public:not(.label):not(.borderless):not(.text-color):hover,
+div.session-bar
+  .protection-public.action-button:not(.label):not(.borderless):not(.text-color):hover,
+.accept.action-button:not(.label):not(.borderless):not(.text-color):hover {
+  background: #925375 !important;
+  color: #ffffff !important;
+}
+.i-button.accept:not(.label):not(.borderless):not(.text-color):hover,
+div.session-bar
+  .i-button.protection-public:not(.label):not(.borderless):not(.text-color):hover,
+div.session-bar
+  .protection-public.action-button:not(.label):not(.borderless):not(.text-color):hover,
+.accept.action-button:not(.label):not(.borderless):not(.text-color):hover,
+.i-button.accept:not(.label):not(.borderless):not(.text-color):active,
+div.session-bar
+  .i-button.protection-public:not(.label):not(.borderless):not(.text-color):active,
+div.session-bar
+  .protection-public.action-button:not(.label):not(.borderless):not(.text-color):active,
+.accept.action-button:not(.label):not(.borderless):not(.text-color):active {
+  border-color: #925375 !important;
+}
+.i-button.accept:not(.label):not(.borderless):not(.text-color),
+div.session-bar
+  .i-button.protection-public:not(.label):not(.borderless):not(.text-color),
+div.session-bar
+  .protection-public.action-button:not(.label):not(.borderless):not(.text-color),
+.accept.action-button:not(.label):not(.borderless):not(.text-color) {
+  border-radius: 2px 0 0 2px;
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  color: #ffffff !important;
+}

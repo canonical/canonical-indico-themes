@@ -1,0 +1,222 @@
+/*
+ * Copyright 2022 Canonical Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+*/
+
+/* Font delcaration */
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700";
+
+/* Imports */
+@import "_buttons.css";
+@import "_forms.css";
+@import "_notifications.css";
+@import "_icons.css";
+@import "call-for-abstracts.css";
+@import "contribution-list.css";
+@import "header.css";
+@import "overview.css";
+@import "registration.css";
+@import "scientific-program.css";
+@import "side-navigation.css";
+@import "surveys.css";
+@import "top-navigation.css";
+@import "timetable.css";
+
+/*
+TEMP STYLES
+*/
+.support_box {
+  display: none;
+}
+/* Custom properties */
+:root {
+  --full-width: 1242px;
+  --full-vertical-padding: 20px;
+}
+
+/* Fill these custom properties from the specific theme */
+:root {
+  --full-width: 1442px;
+  --full-vertical-padding: 20px;
+  --global-margin-left: 350px;
+  --brand-black: #111;
+  --brand-blue: #24598f;
+  --border-grey: rgba(0, 0, 0, 0.56);
+  --brand-white: #fff;
+  --brand-warm-grey: #aea79f;
+  --brand-off-white: #f2f2f2;
+  --button-green: #0e8420;
+  --button-green_hover: #0c6d1a;
+  --brand-primary: #772953;
+}
+
+
+/* Base styling */
+body,
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+  overflow-x: hidden;
+}
+
+/* Manual override for base styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+legend,
+li,
+input,
+.text > .title-with-actions > h2,
+.text > .subtitle-container > h3,
+.ui.button {
+  color: var(--brand-black) !important;
+  font-family: Ubuntu, sans-serif !important;
+}
+
+.ui {
+  font-family: Ubuntu, sans-serif !important;
+}
+
+a,
+.ui-widget-content a {
+  color: #06c;
+}
+
+a:hover,
+.ui-widget-content a:hover {
+  color: #06c;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0 0 1.1rem;
+  padding: 0.4005rem 0 0;
+  max-width: 40rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0 0 1.1rem;
+  padding: 0.338rem 0 0;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 1.1rem;
+  padding: 0.401rem 0 0;
+}
+
+h4 {
+  font-size: 1.306rem;
+  line-height: 2rem;
+  margin-bottom: 0.95rem;
+  padding-top: 0.051rem;
+}
+
+h3 {
+  font-size: 1.706rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  margin-bottom: 0.9rem;
+  padding-top: 0.101rem;
+}
+
+h2 {
+  font-size: 2.228rem;
+  font-weight: 100;
+  line-height: 3rem;
+  margin-bottom: 0.8rem;
+  padding-top: 0.201rem;
+}
+
+h1 {
+  font-size: 2.91rem;
+  font-weight: 100;
+  line-height: 3.5rem;
+  margin: 0 0 0.8rem;
+  padding: 0.201rem 0 0;
+}
+
+strong {
+  font-weight: 400;
+}
+
+td {
+  color: var(--brand-black);
+}
+
+ul:not(#outer) {
+  max-width: 40rem !important;
+}
+
+ul:not(#outer) span {
+  font-size: 1rem;
+}
+
+/* ---------- Content wrapper used on every page ---------- */
+
+/* The wrapper of the whole conference page. */
+.conf {
+  border: none;
+  margin: auto;
+  width: 100%;
+}
+
+/* Wrapper for content and side-navigation */
+#confSectionsBox {
+  margin: 0 auto;
+  padding: 64px var(--full-vertical-padding);
+  position: relative;
+  width: var(--full-width);
+}
+
+/* Content wrapper that has a left margin to emcompass the side-navigation */
+.confBodyBox {
+  margin-left: var(--global-margin-left);
+}
+
+/* More content wrappers */
+.col2 {
+  margin: 0;
+  width: 100%;
+}
+
+.conferenceDetails .description {
+  margin: 0;
+}
+
+/* --------- Responsive --------- */
+@media screen and (max-width: 1460px) {
+  #confSectionsBox {
+    width: 100%;
+  }
+}
+
+/* Handles the footer not working on small screens. Will be removed once the custom footer is implemented */
+@media screen and (max-width: 1260px) {
+  .footer .f-self-no-shrink {
+    display: none;
+  }
+}

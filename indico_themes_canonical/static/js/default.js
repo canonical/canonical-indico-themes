@@ -49,7 +49,7 @@ function setupSideNavigation(sideNavigation, navigationToggle) {
 
   navigationToggle.addEventListener("click", function (event) {
     event.preventDefault();
-    
+
     if (sideNavigation) {
       sideNavigation.classList.remove("is-drawer-hidden");
       toggleDrawer(sideNavigation, !sideNavigation.classList.contains("is-drawer-expanded"));
@@ -102,34 +102,6 @@ function addMetaTag() {
   document.getElementsByTagName('head')[0].appendChild(meta);
 }
 
-/* Build custom header */
-function buildHeaderStrip() {
-  // Remove unused title
-  const headerTitleCont = document.querySelector(".confTitle");
-  headerTitleCont.querySelector("h1").remove();
-
-  // Append new header elements
-  const headerContentCont = document.querySelector(".confTitleBox");
-
-  const headerLogoCont = document.createElement("div");
-  headerLogoCont.classList.add("headerLogoCont");
-  const headerLogo = document.createElement("img");
-  headerLogo.classList.add("headerLogo");
-  headerLogo.src = "https://assets.ubuntu.com/v1/88af8658-ubuntu+summit-illustration.svg"
-  headerLogoCont.append(headerLogo);
-
-  const headerTitle = document.createElement("h1");
-  headerTitle.innerText = "Ubuntu Summit 2022";
-
-  const headerSubtitle = document.createElement("h2");
-  headerSubtitle.classList.add("headerSubtitle");
-  headerSubtitle.innerText = "Prague, Czech Republic\nNovember 7th-9th, 2022";
-  
-  headerTitleCont.append(headerTitle);
-  headerTitleCont.append(headerSubtitle);
-  headerContentCont.prepend(headerLogo);
-}
-
 /* Moves the header nav to be within the stylised header */
 function moveHeaderNav () {
   const headerCont = document.querySelector(".confheader");
@@ -140,9 +112,6 @@ function moveHeaderNav () {
 /* --------- Setup on window load ---------- */
 window.addEventListener("load", function() {
   addMetaTag();
-  buildHeaderStrip();
   moveHeaderNav();
   setupSideNavigations(".conf_leftMenu");
 });
-
-
