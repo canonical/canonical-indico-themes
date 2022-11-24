@@ -5,11 +5,14 @@ Wraps around the upper part of the conference header.
 */
 .confheader {
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 17%, rgba(233, 84, 32, 1) 98%);
   color: #fff;
   overflow: hidden;
   position: relative;
   height: 399px;
+}
+
+.confheader div {
+  color: var(--brand-white) !important;
 }
 
 /*
@@ -19,17 +22,53 @@ Wraps around the title box
   background: none;
   display: flex;
   margin: auto;
-  padding: 80px 20px;
+  padding: 80px 20px 0 20px;
   position: relative;
   text-align: left;
   width: var(--full-width);
 }
 
 /*
+Wraps around the subtitle box
+*/
+.confSubTitleBox {
+  background: none;
+  border: 0;
+  padding: 0px 20px;
+  width: var(--full-width);
+  margin: auto;
+}
+
+.confSubTitleBox .search-box {
+  display: none;
+}
+.confSubTitleContent {
+  border-left: 4px solid var(--brand-primary);
+  display: inline-block;
+  margin-left: var(--global-margin-left);
+  width: 100%;
+  padding-left: 1rem;
+}
+
+/*
+Event Logo placement
+*/
+
+.confLogoBox {
+  position: relative;
+}
+
+.confTitleBox .confLogo {
+  position: absolute;
+  right: 60px;
+  max-height: 12.5rem;
+}
+
+/*
 The style for the title text.
 */
 .confTitle {
-  border-left: 4px solid var(--brand-orange);
+  border-left: 4px solid var(--brand-primary);
   display: inline-block;
   margin-left: var(--global-margin-left);
   width: 100%;
@@ -50,12 +89,22 @@ The style for the title text.
   font-weight: 100;
   margin-bottom: 1rem;
 }
+.confTitleBox .conference-title-link {
+  font-size: 2.91rem;
+  font-weight: 100;
+  line-height: normal;
+  padding-top: 0;
+}
 
 .confTitleBox > .confTitle > h2 {
   color: var(--brand-white) !important;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.datePlace {
+  font-size: 1.306rem;
 }
 
 /* Overides large margins below custom registration fields */
@@ -75,10 +124,10 @@ The style for the title text.
   .confTitleBox {
     width: 100%;
     display: block;
-    padding: 40px 20px;
+    padding: 40px 20px 0 20px;
   }
 
-  .confTitle {
+  .confTitle, .confSubTitleContent {
     width: 100%;
     margin-left: 0;
   }
@@ -87,7 +136,7 @@ The style for the title text.
     height: 316px;
   }
 
-  .headerLogo {
+  .headerLogo, .confLogoBox {
     display: none;
   }
 }

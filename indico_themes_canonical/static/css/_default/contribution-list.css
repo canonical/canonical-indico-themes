@@ -15,7 +15,7 @@
   text-decoration: none;
 }
 .contribution-list .contribution-row:hover {
-  border-color: #e95420;
+  border-color: var(--brand-primary);
 }
 
 .contribution-list .contribution-row .description::before:hover {
