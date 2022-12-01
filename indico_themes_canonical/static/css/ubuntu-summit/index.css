@@ -1,6 +1,5 @@
 @import "../_default/index.css";
 
-
 /* Custom properties */
 :root {
   --brand-primary: #e95420;
@@ -9,7 +8,11 @@
 
 /* Header background gradient */
 .confheader {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 17%, rgba(233, 84, 32, 1) 98%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 17%,
+    rgba(233, 84, 32, 1) 98%
+  );
 }
 
 /* Don't show subtitle, we add our own in the js */

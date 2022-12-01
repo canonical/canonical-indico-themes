@@ -33,7 +33,7 @@ div.page-header-dark {
   color: var(--brand-warm-grey);
 }
 
-#session-bar .i-button[class*='icon-']:not(:empty)::before {
+#session-bar .i-button[class*="icon-"]:not(:empty)::before {
   content: "";
 }
 
@@ -48,7 +48,7 @@ div.page-header-dark {
   }
 
   .event-page-header .main-action-bar {
-  height: 70px;
+    height: 70px;
   }
 
   #protection-details-link {

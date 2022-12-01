@@ -90,9 +90,9 @@
 /* Style for CTA's */
 .action-box.highlight {
   background: none;
-  box-shadow: none;
   border: none;
   border-top: 1px solid var(--brand-warm-grey);
+  box-shadow: none;
   margin-bottom: 2rem;
   padding: 1rem 0 0 0;
 }
@@ -111,6 +111,6 @@
 }
 
 .action-box.highlight .toolbar {
-  padding: 0;
   margin-top: 1rem;
+  padding: 0;
 }

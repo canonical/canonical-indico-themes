@@ -73,7 +73,7 @@
   font-weight: 300;
   line-height: 1.5rem;
   padding: calc(0.4rem - 1px) 1rem;
-  opacity: .33;
+  opacity: 0.33;
 }
 
 .ui-button {
