@@ -3,10 +3,10 @@
 /* Custom properties */
 :root {
   --brand-primary: #772953;
+  --brand-background-primary: #772953;
 }
 
 .confheader {
-  background: rgb(0, 0, 0);
   background: linear-gradient(
       to bottom left,
       rgba(225, 225, 225, 0.3) 0%,

@@ -3,11 +3,12 @@
 /* Custom properties */
 :root {
   --brand-primary: #FA6340;
+  --brand-background-primary: #83bfa1;
 }
 
 .confheader {
   color: #fff;
-  background-color: #83bfa1;
+  background-color: var(--brand-background-primary);
   background-image: linear-gradient(
       to bottom left,
       rgba(74, 131, 125, 0.16) 0,
@@ -68,4 +69,8 @@ div.session-bar
   background: var(--brand-primary) !important;
   border-color: var(--brand-primary) !important;
   color: #ffffff !important;
+}
+
+.simpleTextAnnouncement {
+  margin-bottom: 15ex;
 }

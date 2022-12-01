@@ -4,11 +4,11 @@
 Wraps around the upper part of the conference header.
 */
 .confheader {
-  background: rgb(0, 0, 0);
+  background-color: var(--brand-background-primary);
   color: #fff;
   overflow: hidden;
   position: relative;
-  height: 399px;
+  min-height: 399px;
 }
 
 .confheader div {
@@ -114,9 +114,12 @@ The style for the title text.
 
 /* Style for the announcement */
 .simpleTextAnnouncement {
-  background: none;
   border: none;
   color: var(--brand-white) !important;
+  background: var(--brand-background-primary);
+  width: var(--full-width);
+  margin: 2ex auto;
+  border-radius: 2px;
 }
 
 /* ---------- Responsive ---------- */

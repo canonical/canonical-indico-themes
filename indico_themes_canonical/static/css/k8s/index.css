@@ -3,11 +3,11 @@
 /* Custom properties */
 :root {
   --brand-primary: #e95420;
+  --brand-background-primary: #326de6;
 }
 
 .confheader {
   color: #fff;
-  background-color: #326de6;
   background-image: linear-gradient(
       to bottom left,
       rgba(21, 58, 138, 0.16) 0,
@@ -37,4 +37,8 @@
 .confTitle,
 .confSubTitleContent {
   border-left-color: var(--brand-white);
+}
+
+.simpleTextAnnouncement {
+  margin-bottom: 15ex;
 }
