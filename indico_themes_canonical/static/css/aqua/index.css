@@ -7,8 +7,6 @@
 }
 
 .confheader {
-  color: #fff;
-  background-color: #111;
   background: linear-gradient(
       to bottom left,
       rgba(71, 145, 154, 0.16) 0,
@@ -30,9 +28,11 @@
     ),
     linear-gradient(246deg, #47919a 0%, #47919a 53%, #2b585d 100%);
   background-blend-mode: multiply, multiply, normal, normal;
+  background-color: #111;
   background-position: top right, top left, right bottom -1px, left top;
   background-repeat: no-repeat;
   background-size: 74% 99.83%, 68% 91%, 103.8% 20.26%, 100% 99.8%;
+  color: #fff;
 }
 
 .confTitle,

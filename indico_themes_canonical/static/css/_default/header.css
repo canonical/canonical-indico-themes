@@ -130,16 +130,18 @@ The style for the title text.
     padding: 40px 20px 0 20px;
   }
 
-  .confTitle, .confSubTitleContent {
+  .confTitle,
+  .confSubTitleContent {
     width: 100%;
     margin-left: 0;
   }
-  
+
   .confheader {
     height: 316px;
   }
 
-  .headerLogo, .confLogoBox {
+  .headerLogo,
+  .confLogoBox {
     display: none;
   }
 }

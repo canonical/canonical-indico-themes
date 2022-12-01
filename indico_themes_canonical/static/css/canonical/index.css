@@ -69,8 +69,8 @@ div.session-bar
 div.session-bar
   .protection-public.action-button:not(.label):not(.borderless):not(.text-color),
 .accept.action-button:not(.label):not(.borderless):not(.text-color) {
-  border-radius: 2px 0 0 2px;
   background: var(--brand-primary) !important;
   border-color: var(--brand-primary) !important;
+  border-radius: 2px 0 0 2px;
   color: #ffffff !important;
 }

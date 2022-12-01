@@ -7,7 +7,6 @@
 }
 
 .confheader {
-  color: #fff;
   background: linear-gradient(
       to bottom left,
       rgba(216, 216, 216, 0.54) 0,
@@ -32,10 +31,11 @@
   background-position: top right, top left, right bottom -1px, left top;
   background-repeat: no-repeat;
   background-size: 74% 99.83%, 68% 91%, 103.8% 20.26%, 100% 99.8%;
+  color: #fff;
 }
 
 .simpleTextAnnouncement {
-  color: var(--brand-background-primary);
   background-color: var(--brand-primary);
+  color: var(--brand-background-primary);
   margin-bottom: 15ex;
 }

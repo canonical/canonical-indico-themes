@@ -41,15 +41,15 @@ ul.steps .horizontal-line {
 .ui[class*="bottom attached"].buttons .button {
   background: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.56);
-  border-top: 1px solid rgba(0, 0, 0, 0.56);
   border-radius: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.56);
 }
 
 .ui[class*="bottom attached"].buttons .button:hover {
   background: var(--brand-off-white);
   border-bottom: 1px solid rgba(0, 0, 0, 0.56);
-  border-top: 1px solid rgba(0, 0, 0, 0.56);
   border-radius: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.56);
 }
 
 .ui[class*="bottom attached"].buttons .button:last-child {
@@ -69,18 +69,18 @@ ul.steps .horizontal-line {
 
 .ui.buttons .button.toggle.active {
   background: none !important;
-  color: var(--brand-black) !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.56);
-  border-top: 1px solid rgba(0, 0, 0, 0.56);
   border-left: 1px solid rgba(0, 0, 0, 0.56);
+  border-top: 1px solid rgba(0, 0, 0, 0.56);
+  color: var(--brand-black) !important;
 }
 
 .ui.buttons .button.toggle.active:hover {
   background: var(--brand-off-white) !important;
-  color: var(--brand-black) !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.56);
-  border-top: 1px solid rgba(0, 0, 0, 0.56);
   border-left: 1px solid rgba(0, 0, 0, 0.56);
+  border-top: 1px solid rgba(0, 0, 0, 0.56);
+  color: var(--brand-black) !important;
 }
 
 .i-checkbox input[type="checkbox"] {

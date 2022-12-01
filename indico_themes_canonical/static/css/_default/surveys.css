@@ -5,7 +5,7 @@ form#survey-questionnaire fieldset {
   margin-left: 1rem;
 }
 
-#survey-questionnaire .form-group+.form-group {
+#survey-questionnaire .form-group + .form-group {
   margin-top: 2rem;
 }
 

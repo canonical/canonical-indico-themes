@@ -7,6 +7,10 @@
 }
 
 .confheader {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 17%, rgba(233, 84, 32, 1) 98%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 17%,
+    rgba(233, 84, 32, 1) 98%
+  );
   /* TODO needs the other light gradient stripe */
 }
