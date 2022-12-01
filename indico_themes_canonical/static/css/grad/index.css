@@ -3,10 +3,10 @@
 /* Custom properties */
 :root {
   --brand-primary: #e95420;
+  --brand-background-primary: #e95420;
 }
 
 .confheader {
-  background-color: #772953;
   background: linear-gradient(
       to bottom left,
       rgba(119, 41, 83, 0.16) 0,
@@ -31,4 +31,8 @@
   background-position: top right, top left, right bottom -1px, left top;
   background-repeat: no-repeat;
   background-size: 74% 99.83%, 68% 91%, 103.8% 20.26%, 100% 99.8%;
+}
+
+.simpleTextAnnouncement {
+  margin-bottom: 15ex;
 }
