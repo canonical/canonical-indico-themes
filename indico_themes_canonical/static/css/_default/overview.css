@@ -5,6 +5,7 @@
 .conferenceDetails .infogrid {
   margin-bottom: 2rem;
 }
+
 /* Date and time info */
 .conferenceDetails .infoline {
   margin-top: 1.5rem;
@@ -103,15 +104,9 @@
   margin-left: 8rem;
 }
 
-/* Attach materials button */
-.i-button.text-color:not(.color-on-hover) {
-  color: var(--brand-warm-grey);
-}
-
-.i-button.text-color:not(.color-on-hover):hover {
-  background: none;
+/* Edit resources button */
+.i-button.text-color.subtle:not(:hover):not(:active) {
   border: none;
-  color: #333333;
 }
 
 /* CTA's at bottom of page */

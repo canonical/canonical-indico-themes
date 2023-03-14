@@ -97,7 +97,35 @@ i.icon.icon-phone {
   width: 100%;
 }
 
-/* Styles for the form */
+/* Date input */
+.SingleDatePicker .SingleDatePickerInput__withBorder {
+  border: none;
+}
+
+button.SingleDatePickerInput_calendarIcon {
+  padding: 0;
+}
+
+/* Yes/No */
+
+.events-registration-client-styles-___regform-module__boolean-field___0geJs .ui.button {
+  background: var(--brand-off-white);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.events-registration-client-styles-___regform-module__boolean-field___0geJs .ui.button.active {
+  background: var(--brand-warm-grey);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Dropdown */
+.ui.search.selection.dropdown input[type]:not([type="checkbox"]):not([type="radio"]):not([type="checkbox"]):not([type="submit"]):focus {
+  outline: none;
+}
+
+/* General styles for the form */
 .regform-section {
   box-shadow: none;
 }
