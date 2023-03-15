@@ -146,6 +146,14 @@
   color: #333333;
 }
 
+/* Resources button */
+span.i-label.icon-user {
+  border-color: rgba(0, 0, 0, 0.56);
+  color: var(--brand-black);
+  height: 2.2em;
+  padding: 0px 20px;
+}
+
 /* ---------- Media queries ---------- */
 
 @media screen and (max-width: 550px) {
