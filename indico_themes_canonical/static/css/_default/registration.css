@@ -110,12 +110,14 @@ button.SingleDatePickerInput_calendarIcon {
 
 .events-registration-client-styles-___regform-module__boolean-field___0geJs .ui.button {
   background: var(--brand-off-white);
+  color: var(--brand-black);
   font-size: 1rem;
   font-weight: 400;
 }
 
 .events-registration-client-styles-___regform-module__boolean-field___0geJs .ui.button.active {
   background: var(--brand-warm-grey);
+  color: var(--brand-black);
   font-size: 1rem;
   font-weight: 400;
 }
