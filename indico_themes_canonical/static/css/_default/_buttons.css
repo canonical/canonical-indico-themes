@@ -21,6 +21,7 @@
   border: 1px solid var(--button-green_hover);
   color: var(--brand-white);
   text-decoration: none;
+  padding: calc(0.4rem - 1px) 1rem;
 }
 
 .ui.primary.button.disabled,
@@ -62,6 +63,7 @@
   box-shadow: none;
   color: var(--brand-black);
   text-decoration: none;
+  padding: calc(0.4rem - 1px) 1rem;
 }
 
 .i-button.disabled {
