@@ -62,6 +62,7 @@ Event Logo placement
   position: absolute;
   right: 60px;
   max-height: 12.5rem;
+  top: -1rem;
 }
 
 /*
