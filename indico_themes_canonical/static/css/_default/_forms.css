@@ -1,7 +1,7 @@
 /* ---------- Style for general forms ---------- */
 
 /* Style for form field container */
-.i-form .form-group .form-field {
+.i-form .form-group .form-field input {
   padding-left: 0;
 }
 
