@@ -40,7 +40,7 @@ input[type]:not([type="number"]):not([type="checkbox"]):not([type="radio"]):not(
   width: 100%;
 }
 
-// Override default error input bg color width default Vanilla
+/* Override default error input bg color width default Vanilla */
 .ui.form .field.error {
   background-color: #f8e9e8;
 }
