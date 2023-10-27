@@ -51,7 +51,7 @@ sudo apt-get install libsqlite3-dev
 
 Then from inside your pyenv:
 ```
-run pynev install 3.9.9
+pynev install 3.9.9
 ```
 
 ### Creating the DB
