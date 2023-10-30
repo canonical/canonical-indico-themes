@@ -47,17 +47,28 @@ git clone https://github.com/indico/indico.git src
 
 ```
 sudo apt-get install libsqlite3-dev
-# reinstall Python via pyenv
+```
+
+Then from inside your pyenv:
+```
+pyenv install 3.9.9
 ```
 
 ### Creating the DB
+
+Purge your current version of postgres to ensure you are using the most recent one:
+```
+sudo apt-get --purge remove postgresql postgresql-*
+```
+
 Install postgres if you dont have it already:
 ```
 sudo apt update
 sudo apt install postgresql postgresql-contrib
 ```
 
-Configure a new DB for Indico
+
+Configure a new DB for Indico:
 ```
 sudo -u postgres createuser $USER --createdb
 sudo -u postgres createdb indico_template -O $USER
@@ -78,7 +89,7 @@ pip install -e '.[dev]'
 npm ci
 ```
 
-Congigure Indico using the setup wizard, this creates an indico.conf file within the Indico project that holds custom settings:
+Congigure Indico using the setup wizard, this creates an indico.conf file within the Indico project that holds custom settings (it is advised to set the default locale to 'en_US' to avoid errors when running the project:
 ```
 indico setup wizard --dev
 ```
@@ -108,7 +119,7 @@ In one terminal run the webpack watcher:
 ./bin/maintenance/build-assets.py indico --dev --watch
 ```
 
-In the second terminal run the development server:
+In the second terminal run the development server ('your-hostname' could be both your system or network hostname):
 ```
 indico run -h <your-hostname> -q --enable-evalex
 ```
