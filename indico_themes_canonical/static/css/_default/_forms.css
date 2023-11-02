@@ -104,9 +104,42 @@ input[type]:not([type="number"]):not([type="checkbox"]):not([type="radio"]):not(
   border-color: rgba(0, 0, 0, 0.56);
   color: var(--brand-black);
 }
+
 /* Style for the required asterix '*' */
 .i-form .form-group .form-label > .required {
   color: var(--brand-black);
   line-height: 1rem;
   right: 0.3rem;
+}
+
+/* Override for error message background colour */
+.ui.form .fields.error .field textarea, 
+.ui.form .fields.error .field select, 
+.ui.form .fields.error .field input:not([type]), 
+.ui.form .fields.error .field input[type="date"], 
+.ui.form .fields.error .field input[type="datetime-local"], 
+.ui.form .fields.error .field input[type="email"], 
+.ui.form .fields.error .field input[type="number"], 
+.ui.form .fields.error .field input[type="password"], 
+.ui.form .fields.error .field input[type="search"], 
+.ui.form .fields.error .field input[type="tel"], 
+.ui.form .fields.error .field input[type="time"], 
+.ui.form .fields.error .field input[type="text"], 
+.ui.form .fields.error .field input[type="file"], 
+.ui.form .fields.error .field input[type="url"], 
+.ui.form .field.error textarea, 
+.ui.form .field.error select, 
+.ui.form .field.error input:not([type]), 
+.ui.form .field.error input[type="date"], 
+.ui.form .field.error input[type="datetime-local"], 
+.ui.form .field.error input[type="email"], 
+.ui.form .field.error input[type="number"], 
+.ui.form .field.error input[type="password"], 
+.ui.form .field.error input[type="search"],
+.ui.form .field.error input[type="tel"], 
+.ui.form .field.error input[type="time"], 
+.ui.form .field.error input[type="text"], 
+.ui.form .field.error input[type="file"], 
+.ui.form .field.error input[type="url"] {
+  background-color: #f8e9e8 !important;
 }
