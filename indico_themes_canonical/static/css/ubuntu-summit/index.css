@@ -15,6 +15,14 @@
   );
 }
 
+/* Logo positioning */
+.headerLogo {
+  height: 220px;
+  left: 110px;
+  top: 25px;
+}
+
+
 /* Don't show subtitle, we add our own in the js */
 .support_box,
 .confSubTitleBox {
