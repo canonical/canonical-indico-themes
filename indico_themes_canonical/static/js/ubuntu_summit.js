@@ -115,7 +115,7 @@ function buildHeaderStrip() {
   headerLogoCont.classList.add("headerLogoCont");
   const headerLogo = document.createElement("img");
   headerLogo.classList.add("headerLogo");
-  headerLogo.src = "https://assets.ubuntu.com/v1/5a965c5c-summit-2023-logo.png"
+  headerLogo.src = "https://assets.ubuntu.com/v1/88af8658-ubuntu+summit-illustration.svg";
   headerLogoCont.append(headerLogo);
 
   const headerTitle = document.createElement("h1");
