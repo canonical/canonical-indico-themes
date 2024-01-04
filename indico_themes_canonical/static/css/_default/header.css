@@ -60,8 +60,10 @@ Event Logo placement
 
 .confTitleBox .confLogo {
   position: absolute;
-  right: 60px;
+  right: 1em;
   max-height: 12.5rem;
+  max-width: 12.5rem;
+  top: -0.5em;
 }
 
 /*

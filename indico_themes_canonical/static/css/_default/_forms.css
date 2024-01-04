@@ -1,7 +1,7 @@
 /* ---------- Style for general forms ---------- */
 
 /* Style for form field container */
-.i-form .form-group .form-field {
+.i-form .form-group .form-field input {
   padding-left: 0;
 }
 
@@ -38,6 +38,12 @@ textarea,
 select,
 input[type]:not([type="number"]):not([type="checkbox"]):not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
   width: 100%;
+}
+
+/* Override default error input bg color width default Vanilla */
+.ui.form .field.error input {
+  background-color: #f8e9e8;
+  color: #f8e9e8;
 }
 
 /* Style for checkboxes */
