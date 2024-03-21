@@ -16,3 +16,9 @@
 .i-table.tablesorter-header:hover {
   background-color: var(--brand-off-white);
 }
+
+.list table.i-table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
