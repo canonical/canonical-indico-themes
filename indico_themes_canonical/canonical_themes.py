@@ -36,48 +36,48 @@ THEMES = [
         name="ubuntu_summit",
         css_path="css/ubuntu-summit/index.css",
         title="Ubuntu Summit",
-        js_path="js/ubuntu_summit.js"
+        js_path="js/ubuntu_summit.js",
     ),
     ConferenceTheme(
         name="canonical",
         css_path="css/canonical/index.css",
         title="Canonical",
-        js_path="js/default.js"
+        js_path="js/default.js",
     ),
     ConferenceTheme(
         name="grad",
         css_path="css/grad/index.css",
         title="Suru Gradient",
-        js_path="js/default.js"
+        js_path="js/default.js",
     ),
     ConferenceTheme(
         name="dark",
         css_path="css/dark/index.css",
         title="Suru Dark",
-        js_path="js/default.js"
+        js_path="js/default.js",
     ),
     ConferenceTheme(
         name="snapcraft",
         css_path="css/snapcraft/index.css",
         title="Suru Snapcraft",
-        js_path="js/default.js"
+        js_path="js/default.js",
     ),
     ConferenceTheme(
         name="aqua",
         css_path="css/aqua/index.css",
         title="Suru Aqua",
-        js_path="js/default.js"
+        js_path="js/default.js",
     ),
     ConferenceTheme(
         name="k8s",
         css_path="css/k8s/index.css",
         title="Suru k8s",
-        js_path="js/default.js"
+        js_path="js/default.js",
     ),
     ConferenceTheme(
         name="orange",
         css_path="css/orange/index.css",
         title="Suru Orange",
-        js_path="js/default.js"
+        js_path="js/default.js",
     ),
 ]
