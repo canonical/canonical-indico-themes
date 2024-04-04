@@ -1,0 +1,77 @@
+---
+name: Checkin
+
+on: push
+
+permissions:
+  contents: write
+
+jobs:
+  build-indico-plugin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: plugin
+
+      - name: Clone indico
+        run: |
+          git clone https://github.com/indico/indico.git indico-src \
+              --depth 1 --branch master
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: indico-src/package-lock.json
+
+      - name: Setup apt packages
+        run: |
+          sudo apt install -y --install-recommends libxslt1-dev libxml2-dev libffi-dev libpcre3-dev \
+          libyaml-dev build-essential libpq-dev libpango1.0-dev
+          sudo apt install -y libjpeg-turbo8-dev zlib1g-dev
+
+      - name: npm ci plugin
+        working-directory: ./plugin
+        run: npm ci
+
+      - name: npm ci indico
+        working-directory: ./indico-src
+        run: npm ci
+
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: pip plugin
+        working-directory: ./plugin
+        run: pip install -e '.[dev]'
+
+      - name: Tox
+        working-directory: ./plugin
+        run: python -m tox
+
+      - name: pip indico
+        working-directory: ./indico-src
+        run: pip install -e '.[dev]'
+
+      - name: Build wheel
+        working-directory: ./indico-src
+        run: ./bin/maintenance/build-wheel.py plugin ../plugin
+
+      - name: Upload Wheel
+        uses: actions/upload-artifact@v4
+        with:
+          name: wheel
+          path: indico-src/dist/*.whl
+
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          fail_on_unmatched_files: true
+          files: indico-src/dist/*.whl
