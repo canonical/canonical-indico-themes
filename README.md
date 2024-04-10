@@ -35,7 +35,7 @@ exec "$SHELL"
 Create a virtual environment for Indico to run in:
 ```
 cd ~/dev/indico
-pyenv local 3.9.9
+pyenv local 3.12.2
 python -m venv env
 ```
 
@@ -51,7 +51,7 @@ sudo apt-get install libsqlite3-dev
 
 Then from inside your pyenv:
 ```
-pyenv install 3.9.9
+pyenv install 3.12.2
 ```
 
 ### Creating the DB
@@ -101,8 +101,7 @@ indico db prepare
 
 Build the locales:
 ```
-indico i18n compile-catalog
-indico i18n compile-catalog-react
+indico i18n compile indico
 ```
 
 ### Running Indico
