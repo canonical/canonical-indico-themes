@@ -21,4 +21,18 @@
   display: block;
   overflow-x: auto;
   white-space: nowrap;
+  height: 65vh;
+}
+
+table.i-table thead {
+  position: sticky;
+  top: 0;
+}
+
+table thead th:first-child,
+table tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: var(--brand-white);
 }
