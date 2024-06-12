@@ -24,7 +24,7 @@
   height: 65vh;
 }
 
-table.i-table thead th {
+table.i-table thead {
   position: sticky;
   top: 0;
 }
