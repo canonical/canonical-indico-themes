@@ -214,3 +214,10 @@ button.SingleDatePickerInput_calendarIcon {
     margin-left: 1rem;
   }
 }
+
+/* Style to improve the calendar picker */
+
+/* Workaround for https://github.com/canonical/canonical-indico-customization-files/issues/29 */
+.CalendarMonth_caption select.datepicker-select:first-child {
+  padding-left: 3rem !important;
+}
