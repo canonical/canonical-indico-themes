@@ -86,6 +86,7 @@ div,
 legend,
 li,
 input,
+.qtip-content div,
 .text > .title-with-actions > h2,
 .text > .subtitle-container > h3,
 .ui.button {

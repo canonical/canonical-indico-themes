@@ -52,7 +52,10 @@ function setupSideNavigation(sideNavigation, navigationToggle) {
 
     if (sideNavigation) {
       sideNavigation.classList.remove("is-drawer-hidden");
-      toggleDrawer(sideNavigation, !sideNavigation.classList.contains("is-drawer-expanded"));
+      toggleDrawer(
+        sideNavigation,
+        !sideNavigation.classList.contains("is-drawer-expanded")
+      );
     }
   });
 
@@ -70,10 +73,10 @@ function setupSideNavigation(sideNavigation, navigationToggle) {
   );
 }
 
-function createNavigationToggle () {
+function createNavigationToggle() {
   const mainContentCont = document.querySelector("#confSectionsBox");
   const navigationToggleCont = document.createElement("p");
-  navigationToggleCont.className += "navigationToggleCont"
+  navigationToggleCont.className += "navigationToggleCont";
   const navigationToggleLink = document.createElement("a");
   navigationToggleLink.innerHTML = "Menu";
   navigationToggleLink.className += "navigationToggleBtn";
@@ -99,19 +102,76 @@ function addMetaTag() {
   const meta = document.createElement("meta");
   meta.name = "viewport";
   meta.content = "width=device-width,initial-scale=1.0";
-  document.getElementsByTagName('head')[0].appendChild(meta);
+  document.getElementsByTagName("head")[0].appendChild(meta);
 }
 
 /* Moves the header nav to be within the stylised header */
-function moveHeaderNav () {
+function moveHeaderNav() {
   const headerCont = document.querySelector(".confheader");
   const headerNav = document.querySelector(".header");
   headerCont.prepend(headerNav);
 }
 
+/* Adds counts to the head cells of the registrations table */
+
+function addCountsToTableHead() {
+  // Only run this function if we are on the registrations page which contains
+  // the ending path of /participants
+  if (window.location.pathname.endsWith("/participants")) {
+    const table = document.querySelector(".i-table");
+    if (!table) {
+      return;
+    }
+    const counts = countContent("Yes", table);
+    renderCounts(counts, table);
+  }
+}
+
+function countContent(content, table) {
+  const rows = table.querySelectorAll("tbody tr");
+  const counts = {};
+
+  rows.forEach((row) => {
+    const cells = row.querySelectorAll("td");
+    cells.forEach((cell, index) => {
+      const cellText = cell.innerText;
+      if (cellText === content) {
+        const headCell = table.querySelector(
+          `thead th:nth-child(${index + 1})`
+        );
+        const headCellText = headCell.innerText;
+        if (headCellText in counts) {
+          counts[headCellText]++;
+        } else {
+          counts[headCellText] = 1;
+        }
+      }
+    });
+  });
+
+  return counts;
+}
+
+function renderCounts(counts, table) {
+  const headCells = table.querySelectorAll("thead th");
+  const headCellCount = headCells.length;
+
+  for (let i = 0; i < headCellCount; i++) {
+    const headCell = headCells[i];
+    const headCellText = headCell.innerText;
+
+    if (headCellText in counts) {
+      headCell.innerHTML = `${headCellText} <span class='count'>(${counts[
+        headCellText
+      ].toLocaleString()})</span>`;
+    }
+  }
+}
+
 /* --------- Setup on window load ---------- */
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   addMetaTag();
   moveHeaderNav();
   setupSideNavigations(".conf_leftMenu");
+  addCountsToTableHead();
 });
