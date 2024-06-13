@@ -161,7 +161,9 @@ function renderCounts(counts, table) {
     const headCellText = headCell.innerText;
 
     if (headCellText in counts) {
-      headCell.innerHTML = `${headCellText} <span class='count'>(${counts[headCellText]})</span>`;
+      headCell.innerHTML = `${headCellText} <span class='count'>(${counts[
+        headCellText
+      ].toLocaleString()})</span>`;
     }
   }
 }
