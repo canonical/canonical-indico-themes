@@ -27,6 +27,7 @@
 table.i-table thead {
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 
 table thead th:first-child,
