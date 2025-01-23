@@ -168,10 +168,41 @@ function renderCounts(counts, table) {
   }
 }
 
+/* Renders a table of contents based on the h2 and h3 elements in the page content */
+function renderTableOfContents() {
+  const content = document.querySelector(".page-content");
+  if (!content) {
+    return;
+  }
+
+  const headings = content.querySelectorAll("h2, h3");
+  if (headings.length <= 3) {
+    return;
+  }
+  const tocList = document.createElement("ol");
+  const tocHeading = document.createElement("h3");
+  tocHeading.innerText = "Table of Contents";
+
+  headings.forEach((heading) => {
+    const id = heading.innerText.replace(/\s+/g, "-").toLowerCase();
+    heading.id = id;
+    const listItem = document.createElement("li");
+    const anchor = document.createElement("a");
+    anchor.href = `#${id}`;
+    anchor.innerText = heading.innerText;
+    listItem.appendChild(anchor);
+    tocList.appendChild(listItem);
+  });
+
+  content.prepend(tocList);
+  content.prepend(tocHeading);
+}
+
 /* --------- Setup on window load ---------- */
 window.addEventListener("load", function () {
   addMetaTag();
   moveHeaderNav();
   setupSideNavigations(".conf_leftMenu");
   addCountsToTableHead();
+  renderTableOfContents();
 });
