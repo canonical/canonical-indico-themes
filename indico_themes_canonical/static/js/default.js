@@ -173,7 +173,7 @@ function renderTableOfContents() {
   const content = document.querySelector(".page-content");
   const headings = content.querySelectorAll("h2, h3", "h4");
   // Do not render if there is no content body or less than three headings
-  if (!content && headings.length <= 3) {
+  if (!content || headings.length <= 3) {
     return;
   }
 
