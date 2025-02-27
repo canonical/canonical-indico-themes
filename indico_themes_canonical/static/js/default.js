@@ -168,10 +168,10 @@ function renderCounts(counts, table) {
   }
 }
 
-/* Renders a table of contents based on the h2 and h3 elements in the page content */
+/* Renders a table of contents based on the heading elements in the page content */
 function renderTableOfContents() {
   const content = document.querySelector(".page-content");
-  const headings = content.querySelectorAll("h2, h3", "h4");
+  const headings = content.querySelectorAll("h2, h3, h4");
   // Do not render if there is no content body or less than three headings
   if (!content || headings.length <= 3) {
     return;
