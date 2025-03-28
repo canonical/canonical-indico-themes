@@ -20,7 +20,6 @@ input[type]:not([type="checkbox"]):not([type="radio"]):not([type="checkbox"]):no
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 12%);
   color: var(--brand-black);
   font-weight: 300;
-  min-width: 10em;
   padding: calc(0.4rem - 1px) 0.5rem;
   vertical-align: baseline;
 }
@@ -41,6 +40,16 @@ input[type]:not([type="number"]):not([type="checkbox"]):not([type="radio"]):not(
 }
 
 /* Style for checkboxes */
+
+.ui.checkbox {
+  line-height: 1.5rem;
+}
+
+.ui.radio.checkbox .box:before, .ui.radio.checkbox label:before,
+.ui.radio.checkbox .box:after, .ui.radio.checkbox label:after {
+  top: 5px;
+}
+
 .i-checkbox input,
 .ui.checkbox label:before {
   border-color: var(--brand-black) 111;
@@ -113,33 +122,33 @@ input[type]:not([type="number"]):not([type="checkbox"]):not([type="radio"]):not(
 }
 
 /* Override for error message background colour */
-.ui.form .fields.error .field textarea, 
-.ui.form .fields.error .field select, 
-.ui.form .fields.error .field input:not([type]), 
-.ui.form .fields.error .field input[type="date"], 
-.ui.form .fields.error .field input[type="datetime-local"], 
-.ui.form .fields.error .field input[type="email"], 
-.ui.form .fields.error .field input[type="number"], 
-.ui.form .fields.error .field input[type="password"], 
-.ui.form .fields.error .field input[type="search"], 
-.ui.form .fields.error .field input[type="tel"], 
-.ui.form .fields.error .field input[type="time"], 
-.ui.form .fields.error .field input[type="text"], 
-.ui.form .fields.error .field input[type="file"], 
-.ui.form .fields.error .field input[type="url"], 
-.ui.form .field.error textarea, 
-.ui.form .field.error select, 
-.ui.form .field.error input:not([type]), 
-.ui.form .field.error input[type="date"], 
-.ui.form .field.error input[type="datetime-local"], 
-.ui.form .field.error input[type="email"], 
-.ui.form .field.error input[type="number"], 
-.ui.form .field.error input[type="password"], 
+.ui.form .fields.error .field textarea,
+.ui.form .fields.error .field select,
+.ui.form .fields.error .field input:not([type]),
+.ui.form .fields.error .field input[type="date"],
+.ui.form .fields.error .field input[type="datetime-local"],
+.ui.form .fields.error .field input[type="email"],
+.ui.form .fields.error .field input[type="number"],
+.ui.form .fields.error .field input[type="password"],
+.ui.form .fields.error .field input[type="search"],
+.ui.form .fields.error .field input[type="tel"],
+.ui.form .fields.error .field input[type="time"],
+.ui.form .fields.error .field input[type="text"],
+.ui.form .fields.error .field input[type="file"],
+.ui.form .fields.error .field input[type="url"],
+.ui.form .field.error textarea,
+.ui.form .field.error select,
+.ui.form .field.error input:not([type]),
+.ui.form .field.error input[type="date"],
+.ui.form .field.error input[type="datetime-local"],
+.ui.form .field.error input[type="email"],
+.ui.form .field.error input[type="number"],
+.ui.form .field.error input[type="password"],
 .ui.form .field.error input[type="search"],
-.ui.form .field.error input[type="tel"], 
-.ui.form .field.error input[type="time"], 
-.ui.form .field.error input[type="text"], 
-.ui.form .field.error input[type="file"], 
+.ui.form .field.error input[type="tel"],
+.ui.form .field.error input[type="time"],
+.ui.form .field.error input[type="text"],
+.ui.form .field.error input[type="file"],
 .ui.form .field.error input[type="url"] {
   background-color: #f8e9e8 !important;
 }
