@@ -37,3 +37,12 @@ table tbody td:first-child {
   z-index: 2;
   background: var(--brand-white);
 }
+
+.content.active {
+  overflow-x: scroll;
+}
+
+.ui.table {
+  width: 100vw;
+  table-layout: auto !important;
+}
