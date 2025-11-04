@@ -145,6 +145,10 @@ button.SingleDatePickerInput_calendarIcon {
   padding-left: 1rem;
 }
 
+.regform-section .DayPicker ul {
+  padding-left: 0;
+}
+
 .ui.form .field > label {
   font-size: 1rem;
   font-weight: 400;
