@@ -172,8 +172,8 @@ function renderCounts(counts, table) {
 function renderTableOfContents() {
   const content = document.querySelector(".page-content");
   const headings = content.querySelectorAll("h2, h3, h4");
-  // Do not render if there is no content body or less than three headings
-  if (!content || headings.length <= 3) {
+  // Do not render if there is no content body or less than three headings or if on an overview page
+  if (!content || headings.length <= 3 || isOverviewPage()) {
     return;
   }
 
@@ -194,6 +194,15 @@ function renderTableOfContents() {
 
   content.prepend(tocList);
   content.prepend(tocHeading);
+}
+
+/* Returns true  if the current page URL structure ends with /overview */
+function isOverviewPage() {
+  const lastPath = window.location.pathname
+    .split("/")
+    .filter((s) => s)
+    .pop();
+  return lastPath === "overview";
 }
 
 /* --------- Setup on window load ---------- */
