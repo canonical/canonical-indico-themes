@@ -41,7 +41,7 @@ input[type]:not([type="number"]):not([type="checkbox"]):not([type="radio"]):not(
 
 /* Style for checkboxes */
 
-.ui.checkbox {
+.ui.radio.checkbox {
   line-height: 1.5rem;
 }
 
