@@ -196,13 +196,14 @@ function renderTableOfContents() {
   content.prepend(tocHeading);
 }
 
-/* Returns true  if the current page URL structure ends with /overview */
+/* Returns true if the current page is the overview page.
+   Handles both /event/1/ and /event/1/overview URL forms. */
 function isOverviewPage() {
   const lastPath = window.location.pathname
     .split("/")
     .filter((s) => s)
     .pop();
-  return lastPath === "overview";
+  return lastPath === "overview" || /^\d+$/.test(lastPath);
 }
 
 /* --------- Setup on window load ---------- */
