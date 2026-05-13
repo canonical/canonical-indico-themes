@@ -118,7 +118,7 @@ function addCountsToTableHead() {
   // Only run this function if we are on the registrations page which contains
   // the ending path of /participants
   if (window.location.pathname.endsWith("/participants")) {
-    const table = document.querySelector(".i-table");
+    const table = document.querySelector("table.table");
     if (!table) {
       return;
     }
