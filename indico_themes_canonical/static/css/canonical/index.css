@@ -39,6 +39,10 @@
   background-blend-mode: multiply, multiply, multiply, multiply, normal;
 }
 
+.confTitleBox {
+  border-bottom: 0;
+}
+
 /* Changes the color of the "Public"/"Private" icon */
 .i-button.accept:not(.label):not(.borderless):not(.text-color):hover,
 div.session-bar
