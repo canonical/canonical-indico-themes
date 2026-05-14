@@ -30,3 +30,7 @@
     padding: 40px 20px;
   }
 }
+
+.confTitleBox {
+  border-bottom: 0;
+}
