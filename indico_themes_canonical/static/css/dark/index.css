@@ -39,3 +39,6 @@
   color: var(--brand-background-primary);
   margin-bottom: 15ex;
 }
+.confTitleBox {
+  border-bottom: 0;
+}
