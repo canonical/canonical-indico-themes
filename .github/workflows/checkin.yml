@@ -61,7 +61,7 @@ jobs:
 
       - name: Build wheel
         working-directory: ./indico-src
-        run: ./bin/maintenance/build-wheel.py plugin ../plugin/plugin
+        run: ./bin/maintenance/build-wheel.py plugin ../plugin
 
       - name: Upload Wheel
         uses: actions/upload-artifact@v4
