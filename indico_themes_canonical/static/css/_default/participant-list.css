@@ -43,6 +43,10 @@ table tbody td:first-child {
 }
 
 .ui.table {
-  width: 100vw;
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+  position: relative;
+  display: block;
+  width: auto;
   table-layout: auto !important;
 }
